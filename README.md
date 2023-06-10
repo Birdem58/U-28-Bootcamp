@@ -11,6 +11,7 @@ Takım Unity U-28
 Salusa-Sendecus84
 
 # Product Backlog Url
+https://miro.com/app/board/uXjVMAa8O4w=/
 # Oyunun Açıklaması 
 Yıl 2084
 
