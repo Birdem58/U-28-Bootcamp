@@ -6,42 +6,29 @@ using System;
 
 public class TimeController : MonoBehaviour
 {
-    [SerializeField]
-    private float dayTimeMultiplier;
-    [SerializeField]
-    private float nigthTimeMultiplier;
-    [SerializeField]
-    private float startHour;
+    [SerializeField] private float dayTimeMultiplier;
+    [SerializeField] private float nigthTimeMultiplier;
+    [SerializeField] private float startHour;
 
-    [SerializeField]
-    private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI timeText;
 
-    [SerializeField]
-    private Light sunLight;
+    [SerializeField] private Light sunLight;
 
-    [SerializeField]
-    private float sunriseHour;
+    [SerializeField] private float sunriseHour;
 
-    [SerializeField]
-    private float sunsetHour;
+    [SerializeField] private float sunsetHour;
 
-    [SerializeField]
-    private Color dayAmbientLight;
+    [SerializeField] private Color dayAmbientLight;
 
-    [SerializeField]
-    private Color nightAmbientLight;
+    [SerializeField] private Color nightAmbientLight;
 
-    [SerializeField]
-    private AnimationCurve lightChangeCurve;
+    [SerializeField] private AnimationCurve lightChangeCurve;
 
-    [SerializeField]
-    private float maxSunLightIntensity;
+    [SerializeField] private float maxSunLightIntensity;
 
-    [SerializeField]
-    private Light moonLight;
+    [SerializeField] private Light moonLight;
 
-    [SerializeField]
-    private float maxMoonLightIntensity;
+    [SerializeField] private float maxMoonLightIntensity;
     private DateTime currentTime;
 
     private TimeSpan sunriseTime;
