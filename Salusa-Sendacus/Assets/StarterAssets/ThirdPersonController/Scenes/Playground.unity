@@ -375,18 +375,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28ebbcd7f4773384e867c255af2c669b,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0641452
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28ebbcd7f4773384e867c255af2c669b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0339128
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28ebbcd7f4773384e867c255af2c669b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.96384215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28ebbcd7f4773384e867c255af2c669b,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.047
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28ebbcd7f4773384e867c255af2c669b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2007263
+      value: 1.3171
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28ebbcd7f4773384e867c255af2c669b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.354
+      value: 0.48064
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28ebbcd7f4773384e867c255af2c669b,
         type: 3}
@@ -484,6 +499,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 88.509, z: 0}
+--- !u!1 &231382074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 28ebbcd7f4773384e867c255af2c669b,
+    type: 3}
+  m_PrefabInstance: {fileID: 146567626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &347604755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +2080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimVirtualCamera: {fileID: 1725073211}
   normalSensitivity: 1
+  gun: {fileID: 231382074}
   aimSensitivity: 0.5
   aimColliderMask:
     serializedVersion: 2

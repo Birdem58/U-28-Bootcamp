@@ -9,6 +9,8 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
 
+    [SerializeField] GameObject gun;
+
     [SerializeField] private float aimSensitivity;
 
     [SerializeField] private LayerMask aimColliderMask = new LayerMask();
@@ -51,6 +53,7 @@ public class ThirdPersonShooterController : MonoBehaviour
             transform.forward = Vector3.Lerp(transform.forward, aimDirection, Time.deltaTime * 20f);
             thirdPersonController.SetRotateOnMove(false);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * 10f));
+
         }
         else
         {
@@ -58,6 +61,8 @@ public class ThirdPersonShooterController : MonoBehaviour
             aimVirtualCamera.gameObject.SetActive(false);
             thirdPersonController.SetRotateOnMove(true);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 0f, Time.deltaTime * 10f));
+
+
         }
 
         if (starterAssetsInputs.shoot)
@@ -69,6 +74,21 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 
 
+
+
+    }
+
+    private void LateUpdate()
+    {
+
+        if (starterAssetsInputs.aim)
+        {
+            gun.SetActive(true);
+        }
+        else
+        {
+            gun.SetActive(false);
+        }
 
     }
 }
