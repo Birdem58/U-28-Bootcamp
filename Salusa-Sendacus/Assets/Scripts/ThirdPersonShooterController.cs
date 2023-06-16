@@ -25,6 +25,8 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     private Animator animator;
 
+    private bool isAming;
+
 
 
     private void Awake()
@@ -53,6 +55,8 @@ public class ThirdPersonShooterController : MonoBehaviour
             transform.forward = Vector3.Lerp(transform.forward, aimDirection, Time.deltaTime * 20f);
             thirdPersonController.SetRotateOnMove(false);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * 10f));
+            isAming = true;
+
 
         }
         else
@@ -61,11 +65,12 @@ public class ThirdPersonShooterController : MonoBehaviour
             aimVirtualCamera.gameObject.SetActive(false);
             thirdPersonController.SetRotateOnMove(true);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 0f, Time.deltaTime * 10f));
+            isAming = false;
 
 
         }
 
-        if (starterAssetsInputs.shoot)
+        if (starterAssetsInputs.shoot && isAming)
         {
             Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
             Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
