@@ -71,6 +71,7 @@ Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Di
 
 
 
+Sprint board update: Sprint board screenshotı:
 
 ![Trello](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/d38fcc9d-eb4a-4f2c-bb3b-040950659898)
 
@@ -78,27 +79,7 @@ Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Di
 
 
 
-Sprint board update: Sprint board screenshotları:
 
-![WhatsApp Image 2023-06-18 at 23 59 04](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/c1788490-6101-4d40-9716-8a0a47aba0d9)
-
-
-
-![WhatsApp Image 2023-06-18 at 23 59 30](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/cdd9a346-1984-4beb-9c38-ac78abb9674b)
-
-
-
-![WhatsApp Image 2023-06-18 at 23 59 51](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/48f09c05-3acc-44ba-90b4-7de67e6251cf)
-
-
-
-
-
-![WhatsApp Image 2023-06-19 at 00 00 26](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/f8e68e3d-b77f-4741-87f3-aa539cbc3d83)
-
-
-
-![WhatsApp Image 2023-06-19 at 00 01 24](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/d2790e6b-85ff-48f2-bb8e-48f8b445e8d4)
 
 
 
