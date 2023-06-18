@@ -81,8 +81,12 @@ Sprint board update: Sprint board screenshotı:
 
 ![image](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/3901759c-7568-4bc8-8c1d-c6a337639d09)
 
+Görev paylaşım tablosu:
+![miro2](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/f12a1a36-8cf2-46f6-92b4-3ecabdaac76f)
 
 
+Burndown Chart:
+![Miro](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/d52a7938-4bb6-4052-b1db-19e4dc955290)
 
 
 Ürün Durumu: Ekran görüntüleri ve Ekran Kayıtları:
