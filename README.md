@@ -79,12 +79,13 @@ Sprint board update: Sprint board screenshotı:
 
 
 
+![image](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/3901759c-7568-4bc8-8c1d-c6a337639d09)
 
 
 
 
 
-Ürün Durumu: Ekran görüntüleri:
+Ürün Durumu: Ekran görüntüleri ve Ekran Kayıtları:
 
 ![PlayerRigStructure](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/bbb035c2-77ce-4748-8136-df5bad439e98)
 
@@ -92,6 +93,14 @@ Ana karakterimiz Astra'nın Rig yapısı
 
 
 ![HaritaEskiz](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/5ac06dfa-c2d8-49c8-a00a-333a6d804abc)
+
+
+
+Oyun içi karakter hareketi ve ateş etme mekaniği videosu:
+https://drive.google.com/file/d/1gV_jyAldY8VWOxmnSwxqwoaB81GnFoxx/view?usp=drive_link
+
+Oyun içi Gündüz&Gece döngüsü özelliği videosu:
+https://drive.google.com/file/d/1lwvPBMopFWMV0P_24_gjfAM3fXgGGzxX/view?usp=sharing
 
 
 
