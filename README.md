@@ -15,17 +15,30 @@ https://miro.com/app/board/uXjVMAa8O4w=/
 # Oyunun Açıklaması 
 Yıl 2084
 
-Yeni Enerji ve Yaşam Arayışında Bir Şirket:
-Dünya'da artan İklim krizi ve yıllar süren çoraklık dalgalarından sonra ana karakterimiz olan X, uzayda yeni koloniler araştırmak üzere gönderilen 5 uzay gemisinden birinde çalışmaktadır. Uzay gemileri şirket tarafından tespit edilen farklı gezegenlere gidiyor. 5 kişilik mürettebatıyla birlikte yıldızlar arası yolculuk sırasında bilinmeyen bir kazadan dolayı X ve ekibi bilmedikleri bir gezegene çakılırlar. Bu kaza sırasında X ve ekibi korunmak amacıyla uzay aracından fırlatılırlar. X, uyandığında ekibinden hiç kimseyi bulamaz ve cevaplar aramak için hayatta kalmak zorundadır. 
+Dünya'da artan İklim krizi ve yıllar süren çoraklık dalgalarından sonra ana karakterimiz olan Astra, uzayda yeni koloniler araştırmak üzere gönderilen 5 uzay gemisinden birinde çalışmaktadır. Uzay gemileri Viladyn adlı Yeni Yaşam Arayışında olan bir şirket tarafından tespit edilen farklı gezegenlere gönderilir. 5 kişilik mürettebatıyla birlikte yıldızlar arası yolculuk sırasında bilinmeyen bir kazadan dolayı Astra ve ekibi Salusa Sendecus adındaki gizemli bir gezegene çakılırlar. Kaza anında, fırlatma protokolü devreye girer ve Astra ile ekibi gezegenin farklı noktalarına savrulurlar. Astra, uyandığında ekibinden hiç kimseyi bulamaz ve cevaplar aramak için hayatta kalmak zorundadır. 
 
-Fonksiyonlar hakkında ekleme: 
-Karakter-silah
-Objeler
-Çevre-mekan
 
 # Ürünün Özellikleri
 
 # Hedef Kitle
 # Jüriye Not 
 
+# Sprint 1
+Sprint içinde tamamlanması gereken puan:
 
+Puan tamamlama mantığı:
+
+Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Toplantı dosyayaları paylaşılmıştır.
+
+Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Discord üzerinden online toplantı yapmaktadır. Üyelerin müsaitlik durumununun belirlenmesi adına Google Takvim kullanılmıştır. Toplantı notları Trello üzerinden güncellenirken eş zamanlı olarak Miro da kullanılmaktadır. İlgili dosya örnekleri eklenmiştir.
+
+Sprint board update: Sprint board screenshotları:
+
+Ürün Durumu: Ekran görüntüleri:
+
+Sprint Review: Alınan kararlar: 
+
+Sprint Retrospective:
+
+# Product Backlog Url
+https://miro.com/app/board/uXjVMAa8O4w=/
