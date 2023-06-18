@@ -42,3 +42,6 @@ Sprint Retrospective:
 
 # Product Backlog Url
 https://miro.com/app/board/uXjVMAa8O4w=/
+
+# Oyunun Giriş Animasyonu
+https://youtu.be/ZnkhqCn0qsw
