@@ -71,17 +71,8 @@ Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Di
 
 
 
-![WhatsApp Image 2023-06-19 at 01 23 59](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/41782b99-b614-486f-8f19-835e13fb18d9)
 
-
-
-
-
-
-![WhatsApp Image 2023-06-19 at 01 24 12](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/fbc21e3e-f904-4598-8417-da1d5813a99b)
-
-
-
+![Trello](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/d38fcc9d-eb4a-4f2c-bb3b-040950659898)
 
 
 
@@ -111,9 +102,12 @@ Sprint board update: Sprint board screenshotları:
 
 
 
+
 Ürün Durumu: Ekran görüntüleri:
 
 ![PlayerRigStructure](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/bbb035c2-77ce-4748-8136-df5bad439e98)
+
+Ana karakterimiz Astra'nın Rig yapısı
 
 
 ![HaritaEskiz](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/5ac06dfa-c2d8-49c8-a00a-333a6d804abc)
