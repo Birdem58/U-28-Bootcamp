@@ -8,37 +8,64 @@ Takım Unity U-28
 - Osman Çaputçu / Developer / Game Artist
 - Rabia Gülmez / Developer / UI&UX Designer / Animator
 # Oyun İsmi
-Salusa-Sendecus84
+Viladyn2084
 
 # Product Backlog Url
 https://miro.com/app/board/uXjVMAa8O4w=/
-# Oyunun Açıklaması 
+# Oyunun Açıklaması-Hikayesi
 Yıl 2084
 
-Dünya'da artan İklim krizi ve yıllar süren çoraklık dalgalarından sonra ana karakterimiz olan Astra, uzayda yeni koloniler araştırmak üzere gönderilen 5 uzay gemisinden birinde çalışmaktadır. Uzay gemileri Viladyn adlı Yeni Yaşam Arayışında olan bir şirket tarafından tespit edilen farklı gezegenlere gönderilir. 5 kişilik mürettebatıyla birlikte yıldızlar arası yolculuk sırasında bilinmeyen bir kazadan dolayı Astra ve ekibi Salusa Sendecus adındaki gizemli bir gezegene çakılırlar. Kaza anında, fırlatma protokolü devreye girer ve Astra ile ekibi gezegenin farklı noktalarına savrulurlar. Astra, uyandığında ekibinden hiç kimseyi bulamaz ve cevaplar aramak için hayatta kalmak zorundadır. 
+Dünya, iklim krizi ve çoraklık dalgalarının etkisiyle sarsılırken, Viladyn adlı Yeni Yaşam Arayışında olan şirket, umut ışığıyla aydınlanmaktadır. Astra, bu umut dolu şirketin bir parçası olarak, insanlığın geleceğini inşa etmek üzere uzaya doğru adım atmaktadır.
+Astra, beş kişilik bir mürettebatla birlikte Viladyn'in gönderdiği uzay gemilerinden birinde çalışmaktadır. Şirket, farklı gezegenlerin keşfi için bu uzay gemilerini kullanmaktadır. Yıldızlar arası yolculuk sırasında, Astra ve ekibi bilinmedik bir felaketle karşı karşıya kalır. Uzay gemisi, göktaşı çarpması sonucunda acil bir iniş yapmak zorunda kalır ve Salusa-Sendecus adındaki gizemli gezegene düşer.
+Kaza anında, fırlatma protokolü devreye girer ve Astra ile ekibi gezegenin farklı noktalarına savrulurlar. Astra, uyandığında, etrafında sadece sessizlik ve yabancı bir dünya vardır. Ekibinin hiçbir izine rastlayamaz ve tek başına hayatta kalmanın yanı sıra cevapları bulmak için mücadele etmek zorundadır.
+Bu tuhaf ve tehlikeli gezegende hayatta kalmak Astra için öncelikli bir görevdir. Doğanın vahşi güçleri, bilinmeyen yaratıklar ve çetin doğa koşullarıyla karşı karşıya gelirken, Astra güçlü iradesi ve keskin zekasıyla donanmıştır. Ancak hayatta kalma savaşı sadece bir parçasıdır.
+Astra, tek başına yolculuk ederek hayatta kalma mücadelesi verirken, aynı zamanda kayıp ekibini bulma umuduyla hareket etmektedir. Bu yolculukta, cesaret, dayanıklılık ve keşif ruhu, Astra'yı gezegenin sırlarını ortaya çıkarırken kendi içindeki kahramanlığı keşfetmeye yönlendirecektir.
+
+# Oyun Türü
+Üçüncül bakış açılı hayatta kalma ve keşif oyunudur.
 
 
-# Ürünün Özellikleri
+# Oyunun Özellikleri
+Akıllara durgunluk veren bir hikaye deneyimi.
+
+Esrarengiz bir evren tasarımı.
+
+Third Person kamera.
+
+Dinamik, akıcı oyun mekanikleri.
+
+
 
 # Hedef Kitle
-# Jüriye Not 
+
+7 yaş ve üzeri
+
+Third person seven tüm oyuncular için
+
+Hayatta kalma, keşif oyunu meraklıları için
+
+Yüksek teknolojili dünyalara ve yeni evrenlere ilgili herkes için
+
+# Platform
+PC 
+
 
 # Sprint 1
-Sprint içinde tamamlanması gereken puan:
+Sprint içinde tamamlanması gereken puan:100
 
-Puan tamamlama mantığı:
+Puan tamamlama mantığı:Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
 
 Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Toplantı dosyayaları paylaşılmıştır.
 
-Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Discord üzerinden online toplantı yapmaktadır. Üyelerin müsaitlik durumununun belirlenmesi adına Google Takvim kullanılmıştır. Toplantı notları Trello üzerinden güncellenirken eş zamanlı olarak Miro da kullanılmaktadır. İlgili dosya örnekleri eklenmiştir.
+Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Discord üzerinden online toplantı yapmaktadır. Üyelerin müsaitlik durumununun belirlenmesi adına Google Takvim kullanılmıştır. Toplantı notları Trello üzerinden takip edilirken eş zamanlı olarak görev yönetimi için Miro  kullanılmaktadır. İlgili dosya örnekleri eklenmiştir.
 
 Sprint board update: Sprint board screenshotları:
 
 Ürün Durumu: Ekran görüntüleri:
 
-Sprint Review: Alınan kararlar: 
+Sprint Review: Alınan kararlar: Oyunun bazı temel mekanikleri geliştirildi. Envanter sistemi, oyun içi toplanabilir nesneler, mini map- big map seçenekleri gibi oyun içi çeşitlilik ögelerine karar verildi.
 
-Sprint Retrospective:
+Sprint Retrospective: Github konusunda teknik problemler yaşandı. Bu konu ile ilgili daha detaylı kaynak araştırması yapılmasına ve gerekli durumlarda Akademi asistanlarından destek alınmasına karar verildi. (Tüm ekip)
 
 # Product Backlog Url
 https://miro.com/app/board/uXjVMAa8O4w=/
