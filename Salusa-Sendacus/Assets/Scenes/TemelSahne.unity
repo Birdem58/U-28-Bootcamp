@@ -233,6 +233,11 @@ PrefabInstance:
       propertyPath: aimVirtualCamera
       value: 
       objectReference: {fileID: 1600109628}
+    - target: {fileID: 198531375590158217, guid: 28bf97cce86bd9f4bbafa5a330ad2772,
+        type: 3}
+      propertyPath: pfBulletProjectile
+      value: 
+      objectReference: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
     - target: {fileID: 3802886682112573418, guid: 28bf97cce86bd9f4bbafa5a330ad2772,
         type: 3}
       propertyPath: m_RootOrder
@@ -1267,12 +1272,12 @@ PrefabInstance:
     - target: {fileID: 9200847189575729146, guid: fdd324ecf3bd0564895d8e4ddbfc685a,
         type: 3}
       propertyPath: dayTimeMultiplier
-      value: 1200
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9200847189575729146, guid: fdd324ecf3bd0564895d8e4ddbfc685a,
         type: 3}
       propertyPath: nigthTimeMultiplier
-      value: 12000
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 9200847189575729147, guid: fdd324ecf3bd0564895d8e4ddbfc685a,
         type: 3}
