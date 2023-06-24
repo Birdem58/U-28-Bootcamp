@@ -17,6 +17,8 @@ namespace StarterAssets
 
         public bool shoot;
 
+        public bool pick;
+
         [Header("Movement Settings")]
         public bool analogMovement;
 
@@ -57,6 +59,11 @@ namespace StarterAssets
             ShootInput(value.isPressed);
         }
 
+        public void OnPick(InputValue value)
+        {
+            PickInput(value.isPressed);
+        }
+
 #endif
 
 
@@ -88,6 +95,11 @@ namespace StarterAssets
             shoot = newShootState;
         }
 
+
+        public void PickInput(bool newPickState)
+        {
+            pick = newPickState;
+        }
 
         private void OnApplicationFocus(bool hasFocus)
         {

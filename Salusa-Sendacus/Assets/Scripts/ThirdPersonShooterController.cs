@@ -31,7 +31,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     private Animator animator;
 
-    private bool isAming;
+    public bool isAming;
 
 
 
