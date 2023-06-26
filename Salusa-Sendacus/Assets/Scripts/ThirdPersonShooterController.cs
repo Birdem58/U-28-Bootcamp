@@ -5,11 +5,20 @@ using Cinemachine;
 using StarterAssets;
 using UnityEngine.InputSystem;
 using UnityEngine.Animations.Rigging;
+using TMPro;
 public class ThirdPersonShooterController : MonoBehaviour
 {
     [SerializeField] private Rig aimRig;
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
+
+    public float fullGunCapacity = 30.0f;
+
+    public float onGoingGunCapacity = 15.0f;
+
+    public float bulletRegen = 1.0f;
+
+    public TextMeshProUGUI jarjorText;
 
     [SerializeField] GameObject gun;
 
@@ -41,7 +50,26 @@ public class ThirdPersonShooterController : MonoBehaviour
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         animator = GetComponent<Animator>();
     }
+
+
+    private void Start()
+    {
+
+    }
     private void Update()
+    {
+        if (onGoingGunCapacity > 0)
+        {
+            AimAndShoot();
+        }
+
+
+
+        jarjorText.text = onGoingGunCapacity.ToString();
+    }
+
+
+    private void AimAndShoot()
     {
         Vector3 mouseWorldPosition = Vector3.zero;
         Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
@@ -77,17 +105,28 @@ public class ThirdPersonShooterController : MonoBehaviour
 
         }
 
+
         if (starterAssetsInputs.shoot && isAming)
         {
             Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
             Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
             starterAssetsInputs.shoot = false;
+            onGoingGunCapacity--;
+
+
+
+        }
+    }
+
+    IEnumerator UpdateGunCapacity()
+    {
+        if (onGoingGunCapacity < fullGunCapacity)
+        {
+            onGoingGunCapacity++;
+            yield return null;
         }
 
-
-
-
-
+        yield return new WaitForSeconds(2);
     }
 
     private void LateUpdate()
@@ -101,6 +140,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         {
             gun.SetActive(false);
         }
+        StartCoroutine(UpdateGunCapacity());
 
     }
 }
