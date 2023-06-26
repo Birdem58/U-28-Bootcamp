@@ -126,7 +126,7 @@ public class ThirdPersonShooterController : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(bulletRegen);
     }
 
     private void LateUpdate()
