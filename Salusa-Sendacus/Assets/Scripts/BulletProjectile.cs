@@ -6,6 +6,7 @@ public class BulletProjectile : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
     private Rigidbody bulletRigidbody;
+    [SerializeField] private float deleteTime = 5f;
 
 
     private void Awake()
@@ -24,7 +25,7 @@ public class BulletProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Destroy(gameObject, deleteTime);
     }
 
     void OnTriggerEnter(Collider other)

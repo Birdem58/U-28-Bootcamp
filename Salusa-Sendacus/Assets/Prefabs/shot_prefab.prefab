@@ -204,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  deletetTime: 1
 --- !u!65 &-848117231209609496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -246,3 +247,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  deletetTime: 5
