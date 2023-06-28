@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 91
+  controlID: 79
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 11}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 2
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 92
+  controlID: 80
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,8 +221,8 @@ MonoBehaviour:
     y: 0
     width: 635
     height: 576
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -483,7 +483,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - "Assets/El Yap\u0131m\u0131 Yap\u0131lar/Materials"
+    - Assets/Stylized Plants Kit/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: fa6d0000
     m_LastClickedID: 28154
-    m_ExpandedIDs: 00000000ae900000b0900000b2900000b4900000b6900000b8900000ba900000bc900000be900000c0900000c2900000c4900000c6900000c8900000ca900000cc900000ce900000d0900000
+    m_ExpandedIDs: 00000000e8900000ea900000ec900000ee900000f0900000f2900000f4900000f6900000f8900000fa900000fc900000fe90000000910000029100000491000006910000089100000a9100000c910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -523,10 +523,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 56}
+    scrollPos: {x: 0, y: 120}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000ae900000b0900000b2900000b4900000b8900000bc900000be900000c0900000c2900000c4900000c6900000c8900000ca900000cc900000ce900000d090000034910000a29a0000b89a0000
+    m_ExpandedIDs: ffffffff00000000e8900000ea900000ec900000ee900000f0900000f2900000f4900000f6900000f8900000fa900000fc900000fe9000000091000002910000049100000c9100006e91000004010100dcc40100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -958,9 +958,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1253.4476, y: 344.78156, z: 1365.865}
+    m_Target: {x: 1174.5872, y: 342.72632, z: 1479.1711}
     speed: 2
-    m_Value: {x: 1253.4476, y: 344.78156, z: 1365.865}
+    m_Value: {x: 1174.5872, y: 342.72632, z: 1479.1711}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1007,13 +1007,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.00012295575, y: 1.0006235, z: -0.016769987, w: -0.06039174}
+    m_Target: {x: 0.010045453, y: 0.7841898, z: -0.019821957, w: -0.6245025}
     speed: 2
-    m_Value: {x: -0.000097548516, y: 0.99813324, z: -0.01672692, w: -0.05873892}
+    m_Value: {x: 0.010047828, y: 0.7829946, z: -0.019753104, w: -0.62163365}
   m_Size:
     m_Target: 39.755436
     speed: 2
-    m_Value: 41.628727
+    m_Value: 39.755436
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1070,10 +1070,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 42}
-      m_SelectedIDs: 649fffff
-      m_LastClickedID: -24732
-      m_ExpandedIDs: 609fffff2abfffffd6deffffe6faffff987d0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 98820000
+      m_LastClickedID: 33432
+      m_ExpandedIDs: 445afeffde46ffffecd6ffff18e4ffff64edffff96f0ffff46f2ffff9af2ffffe6faffff987d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
