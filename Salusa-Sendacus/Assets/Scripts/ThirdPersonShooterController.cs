@@ -12,14 +12,6 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
 
-    public float fullGunCapacity = 30.0f;
-
-    public float onGoingGunCapacity = 15.0f;
-
-    public float bulletRegen = 1.0f;
-
-    public TextMeshProUGUI jarjorText;
-
     [SerializeField] GameObject gun;
 
     [SerializeField] private float aimSensitivity;
@@ -31,6 +23,8 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     [SerializeField] private Transform spawnBulletPosition;
 
+    [SerializeField] private TextMeshProUGUI sarjorText;
+
 
     private float aimRigWeight;
 
@@ -40,7 +34,19 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     private Animator animator;
 
+    private float zamanlayici;
+
     public bool isAming;
+
+    public float sarjor = 30;
+
+    public float anlikSarjor = 30;
+
+    public float sarjorDolumHizi = 1;
+    public float sarjorYenilenme = 3;
+
+    private bool isRealoding = false;
+
 
 
 
@@ -49,23 +55,43 @@ public class ThirdPersonShooterController : MonoBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         animator = GetComponent<Animator>();
+        sarjorText = GetComponent<TextMeshProUGUI>();
     }
 
 
     private void Start()
     {
-
+        anlikSarjor = sarjor;
     }
     private void Update()
     {
-        if (onGoingGunCapacity > 0)
+
+        if (anlikSarjor > 0)
         {
             AimAndShoot();
+        }
+        if (isRealoding)
+            return;
+
+
+        zamanlayici += Time.deltaTime;
+
+        if (zamanlayici >= sarjorDolumHizi && anlikSarjor < sarjor)
+        {
+            zamanlayici = 0;
+            anlikSarjor++;
+
         }
 
 
 
-        jarjorText.text = onGoingGunCapacity.ToString();
+        if (anlikSarjor == 0)
+        {
+            StartCoroutine(Reloding());
+            return;
+        }
+
+
     }
 
 
@@ -111,22 +137,19 @@ public class ThirdPersonShooterController : MonoBehaviour
             Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
             Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
             starterAssetsInputs.shoot = false;
-            onGoingGunCapacity--;
-
-
+            anlikSarjor--;
 
         }
     }
 
-    IEnumerator UpdateGunCapacity()
+    IEnumerator Reloding()
     {
-        if (onGoingGunCapacity < fullGunCapacity)
-        {
-            onGoingGunCapacity++;
-            yield return null;
-        }
+        isRealoding = true;
+        yield return new WaitForSeconds(sarjorYenilenme);
 
-        yield return new WaitForSeconds(bulletRegen);
+        anlikSarjor = sarjor;
+
+        isRealoding = false;
     }
 
     private void LateUpdate()
@@ -140,7 +163,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         {
             gun.SetActive(false);
         }
-        StartCoroutine(UpdateGunCapacity());
+
 
     }
 }
