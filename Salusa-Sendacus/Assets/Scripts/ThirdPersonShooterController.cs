@@ -40,12 +40,14 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public bool isAming;
 
-    public float sarjor = 30;
+    public int sarjor = 30;
 
-    public float anlikSarjor = 30;
+    public int anlikSarjor = 30;
 
     public float sarjorDolumHizi = 1;
     public float sarjorYenilenme = 3;
+
+    public ChargeBar chargeBar;
 
     private bool isRealoding = false;
 
@@ -64,6 +66,7 @@ public class ThirdPersonShooterController : MonoBehaviour
     private void Start()
     {
         anlikSarjor = sarjor;
+        chargeBar.SetMaxCharge(sarjor);
     }
     private void Update()
     {
@@ -138,6 +141,7 @@ public class ThirdPersonShooterController : MonoBehaviour
                 Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
                 starterAssetsInputs.shoot = false;
                 anlikSarjor--;
+                chargeBar.SetCharge(anlikSarjor);
 
             }
         }
@@ -150,6 +154,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         yield return new WaitForSeconds(sarjorYenilenme);
 
         anlikSarjor = sarjor;
+        chargeBar.SetCharge(anlikSarjor);
 
         isRealoding = false;
     }
