@@ -14,6 +14,8 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     [SerializeField] GameObject gun;
 
+    [SerializeField] GameObject cursor;
+
     [SerializeField] private float aimSensitivity;
 
     [SerializeField] private LayerMask aimColliderMask = new LayerMask();
@@ -23,7 +25,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     [SerializeField] private Transform spawnBulletPosition;
 
-    [SerializeField] private TextMeshProUGUI sarjorText;
+
 
 
     private float aimRigWeight;
@@ -55,7 +57,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         animator = GetComponent<Animator>();
-        sarjorText = GetComponent<TextMeshProUGUI>();
+
     }
 
 
@@ -65,16 +67,11 @@ public class ThirdPersonShooterController : MonoBehaviour
     }
     private void Update()
     {
-
+        zamanlayici += Time.deltaTime;
         if (anlikSarjor > 0)
         {
             AimAndShoot();
         }
-        if (isRealoding)
-            return;
-
-
-        zamanlayici += Time.deltaTime;
 
         if (zamanlayici >= sarjorDolumHizi && anlikSarjor < sarjor)
         {
@@ -101,6 +98,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
         Ray ray = Camera.main.ScreenPointToRay(screenCenterPoint);
         aimRig.weight = Mathf.Lerp(aimRig.weight, aimRigWeight, Time.deltaTime * 20f);
+
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderMask))
         {
             debugTransform.position = raycastHit.point;
@@ -119,6 +117,7 @@ public class ThirdPersonShooterController : MonoBehaviour
             isAming = true;
             aimRigWeight = 1f;
 
+
         }
         else
         {
@@ -131,20 +130,23 @@ public class ThirdPersonShooterController : MonoBehaviour
 
         }
 
-
-        if (starterAssetsInputs.shoot && isAming)
+        if (isRealoding == false)
         {
-            Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
-            Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
-            starterAssetsInputs.shoot = false;
-            anlikSarjor--;
+            if (starterAssetsInputs.shoot && isAming)
+            {
+                Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
+                Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
+                starterAssetsInputs.shoot = false;
+                anlikSarjor--;
 
+            }
         }
     }
 
     IEnumerator Reloding()
     {
         isRealoding = true;
+
         yield return new WaitForSeconds(sarjorYenilenme);
 
         anlikSarjor = sarjor;
@@ -158,10 +160,12 @@ public class ThirdPersonShooterController : MonoBehaviour
         if (starterAssetsInputs.aim)
         {
             gun.SetActive(true);
+            cursor.SetActive(true);
         }
         else
         {
             gun.SetActive(false);
+            cursor.SetActive(false);
         }
 
 
