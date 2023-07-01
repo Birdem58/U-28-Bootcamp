@@ -80,6 +80,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         {
             zamanlayici = 0;
             anlikSarjor++;
+            chargeBar.SetCharge(anlikSarjor);
 
         }
 
@@ -90,6 +91,7 @@ public class ThirdPersonShooterController : MonoBehaviour
             StartCoroutine(Reloding());
             return;
         }
+        chargeBar.SetCharge(anlikSarjor);
 
 
     }
@@ -155,6 +157,9 @@ public class ThirdPersonShooterController : MonoBehaviour
 
         anlikSarjor = sarjor;
         chargeBar.SetCharge(anlikSarjor);
+
+
+
 
         isRealoding = false;
     }

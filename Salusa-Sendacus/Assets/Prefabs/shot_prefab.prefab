@@ -203,8 +203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f734ed49629288641890e515f2492f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  deletetTime: 1
+  speed: 40
+  deleteTime: 5
 --- !u!65 &-848117231209609496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -246,5 +246,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f734ed49629288641890e515f2492f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  deletetTime: 5
+  speed: 40
+  deleteTime: 5
