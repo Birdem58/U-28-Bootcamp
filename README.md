@@ -1,3 +1,4 @@
+
 # Takım İsmi
 Takım Unity U-28
 # OYUN İLE İLGİLİ BİLGİLER
@@ -173,7 +174,7 @@ Detaylı açıklamalar drive linkinde mevcut:https://drive.google.com/drive/fold
 
 
 Sprint board update: Sprint board screenshotı:
-Topnatı genel gündemleri ve durum notları Trello üzerinden paylaşıldı.
+Toplantı genel gündemleri ve durum notları Trello üzerinden paylaşıldı.
 ![Ekran Görüntüsü (6)](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/5c467d06-8565-47ec-893a-63c3b9dd703d)
 
 
@@ -202,6 +203,12 @@ Görev Yönetimi Miro üzerinden yapıldı.
 
 Ürün Durumu: Ekran görüntüleri ve Ekran Kayıtları:
 
+Oyun haritası:![harita](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/95779df9-23b4-4860-9f7d-08a16df92ed4)
+
+
+
+
+
 
 Oyun içi şarj mekaniği ile ilgili video: https://drive.google.com/file/d/1l1GQaOYNExgUZoWcuA_6NadcRjb0aSp9/view
 
@@ -215,6 +222,10 @@ Oyun içi şarj mekaniğini UI iyileştirme: https://drive.google.com/file/d/1FD
 https://miro.com/app/board/uXjVMAa8O4w=/
 
 
+Sprint Review: Oyunun temel mekanikleri üzerinde uzlaşıldı. Şarj mekanikleri tamamlandı. Ateş etme ve nişan alma mekanikleri optimize edildi. Ses efektleri hazırlandı. Oyun için yan karakter assetleri seçildi. Oyun senaryosu, karakter hikayeleri yazıldı. Oyun haritasında düşman ögelerin yerleri belirlendi. Kaya, köprü, ağaç gibi destekleyici çevresel ögeler eklendi. Harita tasarımı büyük ölçüde tamamlandı mini map 3.Sprinte bırakıldı.
+
+
+Sprint Retrospective: Bayram tatili sebebi takımın kendi içerisinde iletişim kurması zorlaştı ve iletişim kopuklukları yaşandı. Bu durum bazı görevlerde aksaklık yaşanmasına sebep oldu. Durum değerlendirmesi sonucunda takım üyelerinin daha sık aralıklarla ve daha detaylı olarak iletişim kurmasına, görevler için deadline belirlenmesine ve takım içi yardımlaşmaya daha fazla önem verilmesine karar verildi.
 
 
 
