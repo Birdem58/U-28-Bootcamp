@@ -122,10 +122,22 @@ https://miro.com/app/board/uXjVMAa8O4w=/
 https://youtu.be/ZnkhqCn0qsw
 
 # Sprint 2
+
+# Sprint Notları
+
+Genel Özet: 2. Sprint toplantısında konuşulan ve yapılması planlanan çoğu hedef tamamlandı. Bir hedef istenilen başarıya yakın bir sonuç alınsa da eksikti. 3. Sprintte eksikliklerin tamamlanılacak. Takım içi iletişim iyiydi. 
+Toplantı saatleri takım içerisinde rahatça belirlendi. Ekip güncel hareket edebiliyordu. Sorumluluklar konusunda herkes elinden geleni yapıyor, kendisinden istenilenlere karşı gayretliydi. Ekip üyelerinin takıldığı sorunlarda beraber başa çıkılabiliyordu.
+
 Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
 
-Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Toplantı dosyayaları paylaşılmıştır.
 
+Puan Tamamlama Mantığı: Sprint 1'de belirtildiği üzere 3 sprint, toplam 300 puan üzerinden değerlendirme yapıldı. Bu da Sprint 2 olduğundan dolayı 95 puan daha eklenerek 195 puan elde edilmiş oldu. Harita için belirlenen aşama kaydedilmediği için bu sprintte tamamlanması beklenen puandan geride kalındı.
+-Haritanın 3 boyutlu taslağı neredeyse tamamlandı fakat tamamıyla değil. Haritada eksik kalmış yerler bulunmakta. 
+-Astara karakterinin ateş, nişan alma ve batarya şarjı gibi teknik yazılımlar tamamlandı. 
+-Oyunda gündüz - gece döngüsü yapıldı. (Ek geliştirmeler dahil değildir, zaman kalırsa 3. Sprintte buna tekrar değinilebileceği görüşüne varıldı.)
+-Yapıldığını teyit edecek ekran görüntüler GitHub'a yüklendi. 
+
+Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Toplantı dosyayaları paylaşılmıştır.
 
 
 
@@ -228,20 +240,9 @@ Sprint Retrospective: Bayram tatili sebebi takımın kendi içerisinde iletişim
 # Product Backlog Url
 https://miro.com/app/board/uXjVMAa8O4w=/
 
-#Sprint 2
 
-Tamamlanması gereken puan: 95.
 
-Puan Tamamlama Mantığı: Sprint 1'de belirtildiği üzere 3 sprint, toplam 300 puan üzerinden değerlendirme yapıldı. Bu da Sprint 2 olduğundan dolayı 95 puan daha eklenerek 195 puan elde edilmiş oldu. 
--Haritanın 3 boyutlu taslağı neredeyse tamamlandı fakat tamamıyla değil. Haritada eksik kalmış yerler bulunmakta. 
--Astara karakterinin ateş, nişan alma ve batarya şarjı gibi teknik yazılımlar tamamlandı. 
--Oyunda gündüz - gece döngüsü yapıldı. (Ek geliştirmeler dahil değildir, zaman kalırsa 3. Sprintte buna tekrar değinilebileceği görüşüne varıldı.)
--Yapıldığını teyit edecek ekran görüntüler GitHub'a yüklendi. 
 
-Daily Scrum: Önceki Sprint'te aynen olduğu gibi toplantı dosyaları paylaşıldı. Toplantı tamamlandı. 
-
-Genel Özet: 2. Sprint toplantısında konuşulan ve yapılması planlanan çoğu hedef tamamlandı. Bir hedef istenilen başarıya yakın bir sonuç alınsa da eksikti. 3. Sprintte eksikliklerin tamamlanılacak. Takım içi iletişim iyiydi. 
-Toplantı saatleri takım içerisinde rahatça belirlendi. Ekip güncel hareket edebiliyordu. Sorumluluklar konusunda herkes elinden geleni yapıyor, kendisinden istenilenlere karşı gayretliydi. Ekip üyelerinin takıldığı sorunlarda beraber başa çıkılabiliyordu.
 
 
 
