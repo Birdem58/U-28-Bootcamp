@@ -240,3 +240,10 @@ Puan Tamamlama Mantığı: Sprint 1'de belirtildiği üzere 3 sprint, toplam 300
 
 Daily Scrum: Önceki Sprint'te aynen olduğu gibi toplantı dosyaları paylaşıldı. Toplantı tamamlandı. 
 
+Genel Özet: 2. Sprint toplantısında konuşulan ve yapılması planlanan çoğu hedef tamamlandı. Bir hedef istenilen başarıya yakın bir sonuç alınsa da eksikti. 3. Sprintte eksikliklerin tamamlanılacak. Takım içi iletişim iyiydi. 
+Toplantı saatleri takım içerisinde rahatça belirlendi. Ekip güncel hareket edebiliyordu. Sorumluluklar konusunda herkes elinden geleni yapıyor, kendisinden istenilenlere karşı gayretliydi. Ekip üyelerinin takıldığı sorunlarda beraber başa çıkılabiliyordu.
+
+
+
+
+
