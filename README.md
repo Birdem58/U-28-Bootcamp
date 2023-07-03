@@ -228,5 +228,15 @@ Sprint Retrospective: Bayram tatili sebebi takımın kendi içerisinde iletişim
 # Product Backlog Url
 https://miro.com/app/board/uXjVMAa8O4w=/
 
+#Sprint 2
 
+Tamamlanması gereken puan: 95.
+
+Puan Tamamlama Mantığı: Sprint 1'de belirtildiği üzere 3 sprint, toplam 300 puan üzerinden değerlendirme yapıldı. Bu da Sprint 2 olduğundan dolayı 95 puan daha eklenerek 195 puan elde edilmiş oldu. 
+-Haritanın 3 boyutlu taslağı neredeyse tamamlandı fakat tamamıyla değil. Haritada eksik kalmış yerler bulunmakta. 
+-Astara karakterinin ateş, nişan alma ve batarya şarjı gibi teknik yazılımlar tamamlandı. 
+-Oyunda gündüz - gece döngüsü yapıldı. (Ek geliştirmeler dahil değildir, zaman kalırsa 3. Sprintte buna tekrar değinilebileceği görüşüne varıldı.)
+-Yapıldığını teyit edecek ekran görüntüler GitHub'a yüklendi. 
+
+Daily Scrum: Önceki Sprint'te aynen olduğu gibi toplantı dosyaları paylaşıldı. Toplantı tamamlandı. 
 
