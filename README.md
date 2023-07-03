@@ -175,3 +175,17 @@ Sprint board update: Sprint board screenshotı:
 
 
 
+Ürün Durumu: Ekran görüntüleri ve Ekran Kayıtları:
+
+Oyun içi şarj mekaniği ile ilgili video: https://drive.google.com/file/d/1l1GQaOYNExgUZoWcuA_6NadcRjb0aSp9/view
+
+Oyun içi şarj mekaniğinin UI ile desteklenmiş hali: https://drive.google.com/file/d/1aVlyH9zjHQFjawphU4U062U42Vsyp_Oz/view
+
+Oyun içi şarj mekaniğini UI iyileştirme: https://drive.google.com/file/d/1FDtpI1yBIWJ_ySYgKCKFsLLqrzZu47nX/view
+
+
+
+
+
+
+
