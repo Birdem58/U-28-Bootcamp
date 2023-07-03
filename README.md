@@ -120,4 +120,45 @@ https://miro.com/app/board/uXjVMAa8O4w=/
 # Oyunun Giriş Animasyonu
 https://youtu.be/ZnkhqCn0qsw
 
+# Sprint 2
+Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
+
+Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Toplantı dosyayaları paylaşılmıştır.
+
+
+
+
+
+![WhatsApp Image 2023-07-03 at 12 27 20](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/1636fa3a-799c-4fe2-8da2-40bb52ec88d9)
+
+
+
+
+
+
+
+
+![WhatsApp Image 2023-07-03 at 12 25 09](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/91dab7a9-b5eb-4bf5-b296-066f4fcb9d4e)
+
+
+
+
+
+
+
+
+![WhatsApp Image 2023-07-03 at 12 23 40](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/8ea63baf-2d59-4a74-8d3f-c87e791008bf)
+
+
+
+
+
+
+
+![WhatsApp Image 2023-07-03 at 12 22 29](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/979ca786-a263-46fe-8bfe-afce385aba13)
+
+
+
+
+
 
