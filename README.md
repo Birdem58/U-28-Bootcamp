@@ -161,4 +161,17 @@ Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsa
 
 
 
+Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Discord üzerinden online toplantı yapmaktadır. Üyelerin müsaitlik durumununun belirlenmesi adına Google Takvim kullanılmıştır. Toplantı notları Trello üzerinden takip edilirken eş zamanlı olarak görev yönetimi için Miro kullanılmaktadır. İlgili dosya örnekleri eklenmiştir.
+
+
+
+
+
+Sprint board update: Sprint board screenshotı:
+![Ekran Görüntüsü (6)](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/5c467d06-8565-47ec-893a-63c3b9dd703d)
+
+
+
+
+
 
