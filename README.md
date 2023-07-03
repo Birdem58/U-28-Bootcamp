@@ -163,12 +163,37 @@ Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsa
 
 Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Discord üzerinden online toplantı yapmaktadır. Üyelerin müsaitlik durumununun belirlenmesi adına Google Takvim kullanılmıştır. Toplantı notları Trello üzerinden takip edilirken eş zamanlı olarak görev yönetimi için Miro kullanılmaktadır. İlgili dosya örnekleri eklenmiştir.
 
+Takım üyeleri çalışırken daha rahat hareket edebilmek ve yazılan kodların her takım üyesi tarafından net anlaşılabilmesi için kod içi detaylı açıklamalar yazıldı.
+Detaylı açıklamalar drive linkinde mevcut:https://drive.google.com/drive/folders/1-OhYpCBaVPW3F5Qx69jJHNgLlxGZP9xd?usp=sharing
+
+
+![TimeController cs kod açıklaması](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/976f0471-feaa-4531-8eb3-43854fef3893)
 
 
 
 
 Sprint board update: Sprint board screenshotı:
+Topnatı genel gündemleri ve durum notları Trello üzerinden paylaşıldı.
 ![Ekran Görüntüsü (6)](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/5c467d06-8565-47ec-893a-63c3b9dd703d)
+
+
+
+
+
+
+Görev Yönetimi Miro üzerinden yapıldı.
+
+![xxx](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/df254a75-dd67-4bcc-8f0b-af91ee557661)
+
+
+
+![yyy](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/e3dc52b4-66aa-4b4c-8a18-4a5e03af1726)
+
+
+
+
+
+
 
 
 
@@ -177,6 +202,7 @@ Sprint board update: Sprint board screenshotı:
 
 Ürün Durumu: Ekran görüntüleri ve Ekran Kayıtları:
 
+
 Oyun içi şarj mekaniği ile ilgili video: https://drive.google.com/file/d/1l1GQaOYNExgUZoWcuA_6NadcRjb0aSp9/view
 
 Oyun içi şarj mekaniğinin UI ile desteklenmiş hali: https://drive.google.com/file/d/1aVlyH9zjHQFjawphU4U062U42Vsyp_Oz/view
@@ -184,6 +210,9 @@ Oyun içi şarj mekaniğinin UI ile desteklenmiş hali: https://drive.google.com
 Oyun içi şarj mekaniğini UI iyileştirme: https://drive.google.com/file/d/1FDtpI1yBIWJ_ySYgKCKFsLLqrzZu47nX/view
 
 
+
+# Product Backlog Url
+https://miro.com/app/board/uXjVMAa8O4w=/
 
 
 
