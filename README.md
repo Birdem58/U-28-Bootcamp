@@ -218,14 +218,15 @@ Oyun içi şarj mekaniğini UI iyileştirme: https://drive.google.com/file/d/1FD
 
 
 
-# Product Backlog Url
-https://miro.com/app/board/uXjVMAa8O4w=/
-
-
 Sprint Review: Oyunun temel mekanikleri üzerinde uzlaşıldı. Şarj mekanikleri tamamlandı. Ateş etme ve nişan alma mekanikleri optimize edildi. Ses efektleri hazırlandı. Oyun için yan karakter assetleri seçildi. Oyun senaryosu, karakter hikayeleri yazıldı. Oyun haritasında düşman ögelerin yerleri belirlendi. Kaya, köprü, ağaç gibi destekleyici çevresel ögeler eklendi. Harita tasarımı büyük ölçüde tamamlandı mini map 3.Sprinte bırakıldı.
 
 
 Sprint Retrospective: Bayram tatili sebebi takımın kendi içerisinde iletişim kurması zorlaştı ve iletişim kopuklukları yaşandı. Bu durum bazı görevlerde aksaklık yaşanmasına sebep oldu. Durum değerlendirmesi sonucunda takım üyelerinin daha sık aralıklarla ve daha detaylı olarak iletişim kurmasına, görevler için deadline belirlenmesine ve takım içi yardımlaşmaya daha fazla önem verilmesine karar verildi.
+
+
+
+# Product Backlog Url
+https://miro.com/app/board/uXjVMAa8O4w=/
 
 
 
