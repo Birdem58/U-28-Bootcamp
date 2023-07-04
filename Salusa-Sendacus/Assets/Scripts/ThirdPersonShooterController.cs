@@ -23,7 +23,9 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private Transform pfBulletProjectile;
 
     [SerializeField] private Transform spawnBulletPosition;
-
+    [SerializeField] private AudioClip _lazersesi;
+    [SerializeField] private AudioSource audioSource;
+    
 
 
 
@@ -155,6 +157,7 @@ public class ThirdPersonShooterController : MonoBehaviour
             {
                 Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
                 Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
+                audioSource.PlayOneShot(_lazersesi);
                 starterAssetsInputs.shoot = false;
                 anlikSarjor--;
                 chargeBar.SetCharge(anlikSarjor);
