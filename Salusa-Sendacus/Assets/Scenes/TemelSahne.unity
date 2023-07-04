@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17333989, g: 0.21667437, b: 0.29873383, a: 1}
+  m_IndirectSpecularColor: {r: 0.17333964, g: 0.21667418, b: 0.29873365, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -85142,8 +85142,10 @@ MonoBehaviour:
   debugTransform: {fileID: 721633995}
   pfBulletProjectile: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
   spawnBulletPosition: {fileID: 198531373972199499}
-  _lazersesi: {fileID: 8300000, guid: f84c220198291ca48980a30bb9081a26, type: 3}
+  _lazerSesi: {fileID: 0}
   audioSource: {fileID: 7072548748931101234}
+  _sarjYenileme: {fileID: 8300000, guid: 1b8690b646e285149977aa353fe37d56, type: 3}
+  _sarjBitis: {fileID: 8300000, guid: 477f34ecc4a0500479b6d4ffd5080ed9, type: 3}
   isAming: 0
   sarjor: 30
   anlikSarjor: 30

@@ -25,8 +25,11 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private Transform pfBulletProjectile;
 
     [SerializeField] private Transform spawnBulletPosition;
-    [SerializeField] private AudioClip _lazersesi;
+    [SerializeField] private AudioClip _lazerSesi;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip _sarjYenileme;
+    [SerializeField] private AudioClip _sarjBitis;
+
 
 
 
@@ -102,6 +105,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         if (anlikSarjor == 0)
         {
             StartCoroutine(Reloding());
+            audioSource.PlayOneShot(_sarjBitis);
             return;
         }
         chargeBar.SetCharge(anlikSarjor);
@@ -165,7 +169,7 @@ public class ThirdPersonShooterController : MonoBehaviour
             {
                 Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
                 Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
-                audioSource.PlayOneShot(_lazersesi);
+                audioSource.PlayOneShot(_lazerSesi);
                 starterAssetsInputs.shoot = true;
                 anlikSarjor--;
                 chargeBar.SetCharge(anlikSarjor);
@@ -186,6 +190,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
         anlikSarjor = sarjor;
         chargeBar.SetCharge(anlikSarjor);
+        audioSource.PlayOneShot(_sarjYenileme);
 
 
 
