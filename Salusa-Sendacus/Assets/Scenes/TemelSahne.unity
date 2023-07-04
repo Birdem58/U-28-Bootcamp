@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17333964, g: 0.21667418, b: 0.29873365, a: 1}
+  m_IndirectSpecularColor: {r: 0.17333989, g: 0.21667437, b: 0.29873383, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -83054,7 +83054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198531373972199498}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.001, y: 0.129, z: 0.2824}
+  m_LocalPosition: {x: 0.0012, y: 0.1221, z: 0.3021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85132,6 +85132,7 @@ MonoBehaviour:
   aimRig: {fileID: 198531375186700038}
   aimVirtualCamera: {fileID: 1600109628}
   normalSensitivity: 1
+  saniyebasinalazer: 0.2
   gun: {fileID: 1008871095287615799}
   cursor: {fileID: 2568851909455889459}
   aimSensitivity: 0.5

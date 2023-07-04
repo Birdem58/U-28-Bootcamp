@@ -247,4 +247,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  deleteTime: 5
+  deleteTime: 2

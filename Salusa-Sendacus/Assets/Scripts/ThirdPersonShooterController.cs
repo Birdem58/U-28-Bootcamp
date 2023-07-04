@@ -11,6 +11,8 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
 
+    [SerializeField] private float saniyebasinalazer = 0.2f;
+
     [SerializeField] GameObject gun;
 
     [SerializeField] GameObject cursor;
@@ -25,7 +27,7 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private Transform spawnBulletPosition;
     [SerializeField] private AudioClip _lazersesi;
     [SerializeField] private AudioSource audioSource;
-    
+
 
 
 
@@ -38,6 +40,8 @@ public class ThirdPersonShooterController : MonoBehaviour
     private Animator animator;
 
     private float zamanlayici;
+
+    private float lazerZamanlayici;
 
     public bool isAming;
 
@@ -73,6 +77,10 @@ public class ThirdPersonShooterController : MonoBehaviour
     {
         // oyun içersinde framelere göre geçen zamanla bir zamanlayıcı tutuyorum 
         zamanlayici += Time.deltaTime;
+
+        lazerZamanlayici += Time.deltaTime;
+
+
 
         // nişan alıp ateş etmemize anlık olarak şarjörümüzde mermi var mı yok mu ona göre karar veriyoruz
         if (anlikSarjor > 0)
@@ -151,16 +159,17 @@ public class ThirdPersonShooterController : MonoBehaviour
         //ayrıca şuan aim durumunda olup olmadığımızı kontrol eden (2. if) ve bu sırada
         // sol tıka (input.shoot) basıp basmadığımımzı kontrol eden de bir if var.
         // 2. if içerisinde her sol tıka bastığımızda ateş edilmesini ve şarjorün azalmasını sağlıyorum 
-        if (isRealoding == false)
+        if (isRealoding == false && isAming)
         {
-            if (starterAssetsInputs.shoot && isAming)
+            if (starterAssetsInputs.shoot && lazerZamanlayici >= saniyebasinalazer)
             {
                 Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
                 Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
                 audioSource.PlayOneShot(_lazersesi);
-                starterAssetsInputs.shoot = false;
+                starterAssetsInputs.shoot = true;
                 anlikSarjor--;
                 chargeBar.SetCharge(anlikSarjor);
+                lazerZamanlayici = 0;
 
             }
         }
