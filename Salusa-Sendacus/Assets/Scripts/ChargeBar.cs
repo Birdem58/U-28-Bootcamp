@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class ChargeBar : MonoBehaviour
 {
     public Slider slider;
-
-
     public void SetMaxCharge(int charge)
     {
         slider.maxValue = charge;

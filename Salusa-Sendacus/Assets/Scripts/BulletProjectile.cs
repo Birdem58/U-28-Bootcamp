@@ -14,9 +14,6 @@ public class BulletProjectile : MonoBehaviour
         bulletRigidbody = GetComponent<Rigidbody>();
 
     }
-
-
-
     private void Start()
     {
         bulletRigidbody.velocity = transform.forward * speed;
@@ -27,7 +24,6 @@ public class BulletProjectile : MonoBehaviour
     {
         Destroy(gameObject, deleteTime);
     }
-
     void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);

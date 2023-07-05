@@ -36,12 +36,4 @@ public class KristalManager : MonoBehaviour
     {
         Debug.Log("teest fonksyonu kristal manager içinde");
     }
-
-
-
-
-
-
-
-
 }

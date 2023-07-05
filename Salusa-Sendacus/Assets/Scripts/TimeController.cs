@@ -92,7 +92,7 @@ public class TimeController : MonoBehaviour
         // Gece zamanı için bir else 
         else
         {
-            // burda ise yukarıdaki yaptığımız işlemlerin aynılaırını yapıyoruz
+            //burda ise yukarıdaki yaptığımız işlemlerin aynılaırını yapıyoruz
             //fakat burası gece olduğu için burda güneş batımından güneş doğumuna kadar ilgileniyoruz
             //ondan dolayı timeSinceSunset değeriyle Sunsettosunriseduration değeri güneşimizi döndürüyor
             currentTime = currentTime.AddSeconds(Time.deltaTime * nigthTimeMultiplier);

@@ -170,7 +170,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
         }
         // burada if içerisinde if yazmamın sebebi hem o an realoding yapıp yapmadığımı kontrol etmem (1.if) 
-        //ayrıca şuan aim durumunda olup olmadığımızı kontrol eden (2. if) ve bu sırada
+        // ayrıca şuan aim durumunda olup olmadığımızı kontrol eden (2. if) ve bu sırada
         // sol tıka (input.shoot) basıp basmadığımımzı kontrol eden de bir if var.
         // 2. if içerisinde her sol tıka bastığımızda ateş edilmesini ve şarjorün azalmasını sağlıyorum 
         if (isRealoding == false && isAming)
