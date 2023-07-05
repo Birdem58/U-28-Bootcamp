@@ -1349,7 +1349,7 @@ PrefabInstance:
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -1405,6 +1405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sar\u0131Kristal (3)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
       objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -5300,17 +5305,17 @@ PrefabInstance:
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.17
+      value: 1.1699829
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.16
+      value: -0.16000366
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.62
+      value: 3.619995
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -5351,6 +5356,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sar\u0131Kristal (7)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
       objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -11276,6 +11286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Sar\u0131Kristal (11)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
+      objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: _collected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -12241,11 +12256,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 268361740526532166}
   - {fileID: 671724911}
   - {fileID: 778206921}
-  - {fileID: 1764763628}
+  - {fileID: 268361740526532166}
   - {fileID: 1615732305}
+  - {fileID: 1764763628}
   - {fileID: 1035430730}
   - {fileID: 1008689477}
   - {fileID: 795136609}
@@ -12253,6 +12268,11 @@ Transform:
   - {fileID: 1712121019}
   - {fileID: 1419312647}
   - {fileID: 1082982045}
+  - {fileID: 594534808}
+  - {fileID: 477755962}
+  - {fileID: 1644941862}
+  - {fileID: 805116826}
+  - {fileID: 337998237}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14562,6 +14582,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6f771e6fa597229439e728a03c3338d4,
     type: 3}
   m_PrefabInstance: {fileID: 334261349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &337998237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1150855317}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &341360228
 PrefabInstance:
@@ -20073,6 +20099,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 0cb4f10f8e0e59f45a4960eab96e7df8, type: 3}
+--- !u!4 &477755962 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+    type: 3}
+  m_PrefabInstance: {fileID: 480348035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &480041387
 GameObject:
   m_ObjectHideFlags: 0
@@ -20246,6 +20278,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 480147273}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &480348035
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 302691934}
+    m_Modifications:
+    - target: {fileID: 3974995637753420645, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_Name
+      value: "K\u0131rm\u0131z\u0131Kristal (3)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.9091797
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4486084
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.8881226
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1a999fc6b2124642aeff0323ddfadad, type: 3}
 --- !u!1001 &483098010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21273,6 +21374,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 0cb4f10f8e0e59f45a4960eab96e7df8, type: 3}
+--- !u!1001 &503072898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 302691934}
+    m_Modifications:
+    - target: {fileID: 3974995637753420645, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_Name
+      value: "K\u0131rm\u0131z\u0131Kristal (4)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.32998657
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.5480347
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1a999fc6b2124642aeff0323ddfadad, type: 3}
 --- !u!1001 &503177627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24772,6 +24942,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 6f771e6fa597229439e728a03c3338d4, type: 3}
+--- !u!4 &594534808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+    type: 3}
+  m_PrefabInstance: {fileID: 503072898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &597154674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26390,7 +26566,7 @@ PrefabInstance:
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -26446,6 +26622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sar\u0131Kristal (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
       objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -34139,6 +34320,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 805035472}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &805116826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1451206917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &808480297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc7377c82a4fba248b2b6e33eb9729ec,
@@ -34595,6 +34782,141 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 826424649}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &828515123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 828515124}
+  - component: {fileID: 828515126}
+  - component: {fileID: 828515125}
+  m_Layer: 5
+  m_Name: Can+
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &828515124
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828515123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2568851911319622131}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 409.3, y: -67.10498}
+  m_SizeDelta: {x: 244.602, y: 81.79}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &828515125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828515123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: +
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278193393
+  m_fontColor: {r: 0.9450981, g: 0.04705883, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 100
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &828515126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828515123}
+  m_CullTransparentMesh: 1
 --- !u!1001 &829067972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35877,6 +36199,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Sar\u0131Kristal (10)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
+      objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: _collected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -37014,6 +37341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sar\u0131Kristal (6)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
       objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -43408,6 +43740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3b945d09d31dd459384ac76d85784f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kristalText: {fileID: 0}
 --- !u!114 &1055647692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46141,6 +46474,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Sar\u0131Kristal (8)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
+      objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: _collected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -48601,6 +48939,75 @@ Transform:
   m_Father: {fileID: 271404712}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1150855317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 302691934}
+    m_Modifications:
+    - target: {fileID: 3974995637753420645, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_Name
+      value: "K\u0131rm\u0131z\u0131Kristal"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.970642
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.0447388
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2178345
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1a999fc6b2124642aeff0323ddfadad, type: 3}
 --- !u!1001 &1151153552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52913,7 +53320,7 @@ GameObject:
   - component: {fileID: 1228205505}
   - component: {fileID: 1228205504}
   m_Layer: 5
-  m_Name: Regen+
+  m_Name: "\u015Earj+"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63500,6 +63907,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1451206917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 302691934}
+    m_Modifications:
+    - target: {fileID: 3974995637753420645, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_Name
+      value: "K\u0131rm\u0131z\u0131Kristal (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3901367
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.94577026
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.765442
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1a999fc6b2124642aeff0323ddfadad, type: 3}
 --- !u!1001 &1451297442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65545,7 +66021,7 @@ PrefabInstance:
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -65601,6 +66077,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sar\u0131Kristal (4)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
       objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -70331,6 +70812,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Sar\u0131Kristal (9)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
+      objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: _collected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -71348,6 +71834,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643710614}
   m_CullTransparentMesh: 1
+--- !u!4 &1644941862 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1873609995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1645990531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81197,6 +81689,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 335c736db2ac82a40bff8f980fa97c4a, type: 3}
+--- !u!1001 &1873609995
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 302691934}
+    m_Modifications:
+    - target: {fileID: 3974995637753420645, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_Name
+      value: "K\u0131rm\u0131z\u0131Kristal (2)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.6831665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6604004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.47229
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729862875304057564, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1a999fc6b2124642aeff0323ddfadad, type: 3}
 --- !u!1001 &1874622751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87923,6 +88484,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Sar\u0131Kristal (5)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
+      objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: _collected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -88379,7 +88945,7 @@ PrefabInstance:
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -88435,6 +89001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sar\u0131Kristal (2)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
       objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -96352,6 +96923,7 @@ RectTransform:
   - {fileID: 784928732}
   - {fileID: 1022579362}
   - {fileID: 1228205503}
+  - {fileID: 828515124}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96457,7 +97029,7 @@ PrefabInstance:
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4105215955499875470, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -96513,6 +97085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sar\u0131Kristal"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675329366269768740, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: SariKristal
       objectReference: {fileID: 0}
     - target: {fileID: 8746123959288185150, guid: 40bc23db0b95b6c43807c0b7d3b619b4,
         type: 3}
@@ -96700,7 +97277,6 @@ GameObject:
   - component: {fileID: 4579388849576637155}
   - component: {fileID: 198531375734077494}
   - component: {fileID: 7072548748931101224}
-  - component: {fileID: 7072548748931101232}
   - component: {fileID: 7072548748931101233}
   - component: {fileID: 7072548748931101234}
   m_Layer: 8
@@ -96764,33 +97340,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7072548748931101232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4579388849576637167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37b59641a22e26249a73be955cfbc70e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnToplananKristal:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1055647691}
-        m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: UpdateKristalText
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7072548748931101232}
-          m_ObjectArgumentAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &7072548748931101233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96803,9 +97352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee29f43614afa6f48a35b1b840cbcdaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canText: {fileID: 828515123}
   healthBar: {fileID: 784928730}
   maxHealth: 100
   currentHealth: 0
+  regenAmount: 1
   healthRegen: 0.5
 --- !u!82 &7072548748931101234
 AudioSource:
