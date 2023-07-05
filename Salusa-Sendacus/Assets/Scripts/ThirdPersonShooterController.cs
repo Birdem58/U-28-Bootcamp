@@ -33,6 +33,8 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private AudioClip _sarjYenileme;
     [SerializeField] private AudioClip _sarjBitis;
     [SerializeField] private AudioClip _sarjToplama;
+    [SerializeField] private AudioClip _hasarArttir;
+
 
 
 
@@ -59,6 +61,8 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public float sarjorDolumHizi = 3;
     public float sarjorYenilenme = 3;
+
+    public int Hasar = 20;
 
     public ChargeBar chargeBar;
 
@@ -195,8 +199,9 @@ public class ThirdPersonShooterController : MonoBehaviour
         yield return new WaitForSeconds(sarjorYenilenme);
 
         anlikSarjor = sarjor;
-        chargeBar.SetCharge(anlikSarjor);
         audioSource.PlayOneShot(_sarjYenileme);
+        chargeBar.SetCharge(anlikSarjor);
+
 
 
 
@@ -208,6 +213,12 @@ public class ThirdPersonShooterController : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         regenText.SetActive(false);
+    }
+
+    IEnumerator PlayHasarEffect()
+    {
+        yield return new WaitForSeconds(1);
+        Debug.Log("HasarArttirmaEfektiBUUm");
     }
 
     //Karakter Aim aldığında hedef cursorünün ve Lazer silahının görünmesini sağlıyor.
@@ -227,6 +238,13 @@ public class ThirdPersonShooterController : MonoBehaviour
             cursor.SetActive(false);
         }
 
+    }
+
+    public void ChargeHasar()
+    {
+        Hasar += 5;
+        audioSource.PlayOneShot(_hasarArttir);
+        StartCoroutine(PlayHasarEffect());
     }
 
 
