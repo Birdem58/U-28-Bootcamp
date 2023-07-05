@@ -6,12 +6,13 @@ using UnityEngine.Events;
 
 public class KristalManager : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _collected;
+    [SerializeField] private UnityEvent _collectedCharge;
+
 
 
     private void Start()
     {
-        _collected.AddListener(GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonShooterController>().ChargeBarRegen);
+        _collectedCharge.AddListener(GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonShooterController>().ChargeBarRegen);
     }
 
     void Update()
@@ -24,9 +25,9 @@ public class KristalManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && other.gameObject)
         {
-            _collected.Invoke();
+            _collectedCharge.Invoke();
             Destroy(gameObject);
         }
     }

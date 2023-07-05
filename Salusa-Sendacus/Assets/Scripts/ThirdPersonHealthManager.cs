@@ -5,10 +5,13 @@ using UnityEngine;
 public class ThirdPersonHealthManager : MonoBehaviour
 {
 
+    [SerializeField] private GameObject canText;
     public HealthBar healthBar;
 
     public int maxHealth = 100;
     public int currentHealth;
+
+    public int regenAmount = 1;
 
     public float healthRegen = 0.5f;
     private float zamanlayici;
@@ -16,6 +19,7 @@ public class ThirdPersonHealthManager : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        canText.SetActive(false);
 
     }
 
@@ -25,14 +29,14 @@ public class ThirdPersonHealthManager : MonoBehaviour
         zamanlayici += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.F))
         {
-            TakeDamage(20);
+            TakeDamage(10);
         }
 
 
         if (zamanlayici >= healthRegen && currentHealth < maxHealth)
         {
             zamanlayici = 0;
-            currentHealth++;
+            currentHealth += regenAmount;
             healthBar.SetHealth(currentHealth);
 
         }
@@ -44,5 +48,28 @@ public class ThirdPersonHealthManager : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+    }
+
+    IEnumerator ShowCanText()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canText.SetActive(false);
+    }
+
+
+    public void CanBarRegen()
+    {
+        maxHealth += 20;
+        if (regenAmount <= 50)
+        {
+            regenAmount++;
+            canText.SetActive(true);
+        }
+        if (healthRegen >= 0.1f)
+        {
+            healthRegen -= 0.05f;
+            canText.SetActive(true);
+        }
+        StartCoroutine(ShowCanText());
     }
 }

@@ -237,7 +237,7 @@ public class ThirdPersonShooterController : MonoBehaviour
             sarjorDolumHizi -= 0.1f;
             regenText.SetActive(true);
         }
-        else if (sarjorDolumHizi == 0.3f)
+        if (sarjorYenilenme > 2f)
         {
             sarjorYenilenme -= 0.1f;
             regenText.SetActive(true);
