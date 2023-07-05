@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17333989, g: 0.21667437, b: 0.29873383, a: 1}
+  m_IndirectSpecularColor: {r: 0.17333964, g: 0.21667418, b: 0.29873365, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -43740,7 +43740,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3b945d09d31dd459384ac76d85784f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kristalText: {fileID: 0}
 --- !u!114 &1055647692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49006,6 +49005,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9188527129608164530, guid: c1a999fc6b2124642aeff0323ddfadad,
+        type: 3}
+      propertyPath: _canSesi
+      value: 
+      objectReference: {fileID: 8300000, guid: 1664e5c3d994b324b9b23ed3e69539c8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a999fc6b2124642aeff0323ddfadad, type: 3}
 --- !u!1001 &1151153552
@@ -96628,6 +96632,7 @@ MonoBehaviour:
   audioSource: {fileID: 7072548748931101234}
   _sarjYenileme: {fileID: 8300000, guid: 1b8690b646e285149977aa353fe37d56, type: 3}
   _sarjBitis: {fileID: 8300000, guid: 477f34ecc4a0500479b6d4ffd5080ed9, type: 3}
+  _sarjToplama: {fileID: 8300000, guid: 698a135ab3f9dca4fb2b753a9c4a09fa, type: 3}
   isAming: 0
   sarjor: 30
   anlikSarjor: 30
@@ -97352,6 +97357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee29f43614afa6f48a35b1b840cbcdaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 7072548748931101234}
+  _canSesi: {fileID: 8300000, guid: 1664e5c3d994b324b9b23ed3e69539c8, type: 3}
   canText: {fileID: 828515123}
   healthBar: {fileID: 784928730}
   maxHealth: 100

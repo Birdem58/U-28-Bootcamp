@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ThirdPersonHealthManager : MonoBehaviour
 {
-
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip _canSesi;
     [SerializeField] private GameObject canText;
     public HealthBar healthBar;
 
@@ -60,16 +61,19 @@ public class ThirdPersonHealthManager : MonoBehaviour
     public void CanBarRegen()
     {
         maxHealth += 20;
+        audioSource.PlayOneShot(_canSesi);
         if (regenAmount <= 50)
         {
             regenAmount++;
             canText.SetActive(true);
         }
+
         if (healthRegen >= 0.1f)
         {
             healthRegen -= 0.05f;
             canText.SetActive(true);
         }
+
         StartCoroutine(ShowCanText());
     }
 }

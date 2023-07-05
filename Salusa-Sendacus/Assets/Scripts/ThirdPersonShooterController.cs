@@ -32,6 +32,7 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip _sarjYenileme;
     [SerializeField] private AudioClip _sarjBitis;
+    [SerializeField] private AudioClip _sarjToplama;
 
 
 
@@ -231,7 +232,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public void ChargeBarRegen()
     {
-
+        audioSource.PlayOneShot(_sarjToplama);
         if (sarjorDolumHizi >= 0.3f)
         {
             sarjorDolumHizi -= 0.1f;
