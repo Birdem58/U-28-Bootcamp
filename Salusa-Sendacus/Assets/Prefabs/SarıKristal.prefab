@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7485625851930057319
+--- !u!1 &6675329366269768740
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 268361741261230797}
-  - component: {fileID: 6337183820332649754}
-  - component: {fileID: 1990374092805191755}
-  - component: {fileID: 4599721945683725325}
-  - component: {fileID: 3396049345960020596}
+  - component: {fileID: 4105215955499875470}
+  - component: {fileID: 7832870973412762457}
+  - component: {fileID: 2368606485437519368}
+  - component: {fileID: 330098681790833230}
+  - component: {fileID: 8746123959288185150}
   m_Layer: 0
-  m_Name: MaviKristal
+  m_Name: "Sar\u0131Kristal"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &268361741261230797
+--- !u!4 &4105215955499875470
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7485625851930057319}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 940.773, y: 399.73044, z: 795.6981}
+  m_GameObject: {fileID: 6675329366269768740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9616089, y: -1.4126282, z: 0.9226074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6337183820332649754
+--- !u!33 &7832870973412762457
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7485625851930057319}
+  m_GameObject: {fileID: 6675329366269768740}
   m_Mesh: {fileID: -3184751030127087315, guid: 857b327263617a64797eae0e874f3a97, type: 3}
---- !u!23 &1990374092805191755
+--- !u!23 &2368606485437519368
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7485625851930057319}
+  m_GameObject: {fileID: 6675329366269768740}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 99d21ac90db6e1c4f9ea8e939ecdfff4, type: 2}
+  - {fileID: 2100000, guid: 58db565594ee6ca4cac22490238e88d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,28 +85,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4599721945683725325
+--- !u!65 &330098681790833230
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7485625851930057319}
+  m_GameObject: {fileID: 6675329366269768740}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.371521, y: 0.67267305, z: 0.29431152}
   m_Center: {x: -0.0073547363, y: 0.33633652, z: -0.001953125}
---- !u!114 &3396049345960020596
+--- !u!114 &8746123959288185150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7485625851930057319}
+  m_GameObject: {fileID: 6675329366269768740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba6ea48890cc8e94a8ae9cd806b6ea99, type: 3}
+  m_Script: {fileID: 11500000, guid: 16e4d4938df7de148a1fe66b4eb40e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8746123959288185150}
+        m_TargetAssemblyTypeName: KristalManager, Assembly-CSharp
+        m_MethodName: test
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ThirdPersonShooterController, Assembly-CSharp
+        m_MethodName: ChargeBarRegen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

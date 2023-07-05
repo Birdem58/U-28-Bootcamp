@@ -5,8 +5,11 @@ using Cinemachine;
 using StarterAssets;
 using UnityEngine.InputSystem;
 using UnityEngine.Animations.Rigging;
+
 public class ThirdPersonShooterController : MonoBehaviour
 {
+    [SerializeField] private GameObject regenText;
+
     [SerializeField] private Rig aimRig;
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
@@ -34,6 +37,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 
 
+
     private float aimRigWeight;
 
     private ThirdPersonController thirdPersonController;
@@ -52,7 +56,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public int anlikSarjor = 30;
 
-    public float sarjorDolumHizi = 1;
+    public float sarjorDolumHizi = 3;
     public float sarjorYenilenme = 3;
 
     public ChargeBar chargeBar;
@@ -75,6 +79,7 @@ public class ThirdPersonShooterController : MonoBehaviour
     {  // anlık şarjörü şarjör kapasitemize eşitliyorum
         anlikSarjor = sarjor;
         chargeBar.SetMaxCharge(sarjor);
+        regenText.SetActive(false);
     }
     private void Update()
     {
@@ -198,6 +203,12 @@ public class ThirdPersonShooterController : MonoBehaviour
         isRealoding = false;
     }
 
+    IEnumerator ShowRegenText()
+    {
+        yield return new WaitForSeconds(1);
+        regenText.SetActive(false);
+    }
+
     //Karakter Aim aldığında hedef cursorünün ve Lazer silahının görünmesini sağlıyor.
     //bu fonksyonun referansını lateupdate de görmemizin sebebi animasyonlardan daha 
     //sonra çalışmasının görsel bütünlüğe uymasından kaynaklı
@@ -216,6 +227,27 @@ public class ThirdPersonShooterController : MonoBehaviour
         }
 
     }
+
+
+    public void ChargeBarRegen()
+    {
+
+        if (sarjorDolumHizi >= 0.3f)
+        {
+            sarjorDolumHizi -= 0.1f;
+            regenText.SetActive(true);
+        }
+        else if (sarjorDolumHizi == 0.3f)
+        {
+            sarjorYenilenme -= 0.1f;
+            regenText.SetActive(true);
+        }
+        StartCoroutine(ShowRegenText());
+
+
+    }
+
+
     private void LateUpdate()
     {
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3485770220717255380}
   - component: {fileID: 3082152803296587375}
   - component: {fileID: 4208282390036061962}
-  - component: {fileID: 4117730433171977638}
+  - component: {fileID: -6676819680456083035}
   m_Layer: 0
   m_Name: "K\u0131rm\u0131z\u0131Kristal"
   m_TagString: Untagged
@@ -98,7 +98,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3554077, y: 0.67267305, z: 0.3597412}
   m_Center: {x: 0.023223877, y: 0.33633652, z: 0.006164551}
---- !u!114 &4117730433171977638
+--- !u!114 &-6676819680456083035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,6 +107,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3974995637753420645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba6ea48890cc8e94a8ae9cd806b6ea99, type: 3}
+  m_Script: {fileID: 11500000, guid: 16e4d4938df7de148a1fe66b4eb40e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collected:
+    m_PersistentCalls:
+      m_Calls: []
