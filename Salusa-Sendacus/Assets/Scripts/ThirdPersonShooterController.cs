@@ -20,6 +20,10 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     [SerializeField] GameObject cursor;
 
+    [SerializeField] GameObject lightParticle;
+
+
+
     [SerializeField] private float aimSensitivity;
 
     [SerializeField] private LayerMask aimColliderMask = new LayerMask();
@@ -34,13 +38,9 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private AudioClip _sarjBitis;
     [SerializeField] private AudioClip _sarjToplama;
     [SerializeField] private AudioClip _hasarArttir;
+    public AudioClip[] PistolSoundEffects;
 
-
-
-
-
-
-
+    // public ParticleSystem upgrade;
     private float aimRigWeight;
 
     private ThirdPersonController thirdPersonController;
@@ -76,6 +76,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         animator = GetComponent<Animator>();
+        //  upgrade = GetComponent<ParticleSystem>();
 
     }
 
@@ -85,6 +86,8 @@ public class ThirdPersonShooterController : MonoBehaviour
         anlikSarjor = sarjor;
         chargeBar.SetMaxCharge(sarjor);
         regenText.SetActive(false);
+        lightParticle.SetActive(false);
+
     }
     private void Update()
     {
@@ -111,14 +114,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         }
 
 
-        // eğer şarjımız bitmişse de burda corotine'i başlatıyorum.
-        if (anlikSarjor == 0)
-        {
-            StartCoroutine(Reloding());
-            audioSource.PlayOneShot(_sarjBitis);
-            return;
-        }
-        chargeBar.SetCharge(anlikSarjor);
+
 
 
     }
@@ -177,15 +173,24 @@ public class ThirdPersonShooterController : MonoBehaviour
         {
             if (starterAssetsInputs.shoot && lazerZamanlayici >= saniyebasinalazer)
             {
+                int x = Random.Range(0, 2);
                 Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
                 Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
-                audioSource.PlayOneShot(_lazerSesi);
+                audioSource.PlayOneShot(PistolSoundEffects[x]);
                 starterAssetsInputs.shoot = true;
                 anlikSarjor--;
                 chargeBar.SetCharge(anlikSarjor);
                 lazerZamanlayici = 0;
 
             }
+            // eğer şarjımız bitmişse de burda corotine'i başlatıyorum.
+            if (anlikSarjor == 0)
+            {
+                StartCoroutine(Reloding());
+                audioSource.PlayOneShot(_sarjBitis);
+                return;
+            }
+            chargeBar.SetCharge(anlikSarjor);
         }
     }
 
@@ -215,10 +220,10 @@ public class ThirdPersonShooterController : MonoBehaviour
         regenText.SetActive(false);
     }
 
-    IEnumerator PlayHasarEffect()
+    IEnumerator StopHasarEffect()
     {
         yield return new WaitForSeconds(1);
-        Debug.Log("HasarArttirmaEfektiBUUm");
+        lightParticle.SetActive(false);
     }
 
     //Karakter Aim aldığında hedef cursorünün ve Lazer silahının görünmesini sağlıyor.
@@ -244,7 +249,8 @@ public class ThirdPersonShooterController : MonoBehaviour
     {
         Hasar += 5;
         audioSource.PlayOneShot(_hasarArttir);
-        StartCoroutine(PlayHasarEffect());
+        lightParticle.SetActive(true);
+        StartCoroutine(StopHasarEffect());
     }
 
 
