@@ -15,7 +15,7 @@ C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59278
+63573
 Successfully changed project path to: C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
 C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19432] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 1899610078 [EditorId] 1899610078 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [9164] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 2694240623 [EditorId] 2694240623 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19432] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 1899610078 [EditorId] 1899610078 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9164] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 2694240623 [EditorId] 2694240623 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 220.11 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 215.96 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.27f1 (ca3ffb99bcc6)
 [Subsystems] Discovering subsystems at path D:/2021.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -67,78 +67,78 @@ Initialize mono
 Mono path[0] = 'D:/2021.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2021.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2021.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2021.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/2021.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005047 seconds.
+Registered in 0.004350 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 219.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 205.69 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.929 seconds
+- Completed reload, in  0.862 seconds
 Domain Reload Profiling:
-	ReloadAssembly (929ms)
-		BeginReloadAssembly (118ms)
+	ReloadAssembly (862ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (691ms)
-			LoadAssemblies (118ms)
+		EndReloadAssembly (639ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (143ms)
+			SetupTypeCache (129ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (449ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (420ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (219ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (153ms)
-				ProcessInitializeOnLoadMethodAttributes (64ms)
+				RefreshPlugins (206ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.022537 seconds.
+Registered in 0.018988 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\admin\Documents\GitHub\U-28-Bootcamp\Salusa-Sendacus\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\admin\Documents\GitHub\U-28-Bootcamp\Salusa-Sendacus\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 231.13 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 225.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.191 seconds
+- Completed reload, in  2.080 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2192ms)
-		BeginReloadAssembly (162ms)
+	ReloadAssembly (2081ms)
+		BeginReloadAssembly (163ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (1881ms)
-			LoadAssemblies (172ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1780ms)
+			LoadAssemblies (162ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (442ms)
+			SetupTypeCache (410ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (132ms)
-			SetupLoadedEditorAssemblies (1086ms)
+			RebuildScriptCaches (126ms)
+			SetupLoadedEditorAssemblies (1030ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (231ms)
-				BeforeProcessingInitializeOnLoad (199ms)
-				ProcessInitializeOnLoadAttributes (556ms)
-				ProcessInitializeOnLoadMethodAttributes (89ms)
+				RefreshPlugins (226ms)
+				BeforeProcessingInitializeOnLoad (194ms)
+				ProcessInitializeOnLoadAttributes (517ms)
+				ProcessInitializeOnLoadMethodAttributes (84ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -146,13 +146,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 2.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7364 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 170 unused Assets / (12.7 MB). Loaded Objects now: 7730.
 Memory consumption went from 435.8 MB to 423.1 MB.
-Total: 10.815400 ms (FindLiveObjects: 0.670100 ms CreateObjectMapping: 0.222600 ms MarkObjects: 5.478000 ms  DeleteObjects: 4.442900 ms)
+Total: 11.851200 ms (FindLiveObjects: 0.820600 ms CreateObjectMapping: 0.460200 ms MarkObjects: 6.773300 ms  DeleteObjects: 3.794900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,163 +166,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 16619.680200 seconds.
-  path: Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleTerrain/ExampleLaserCannonTerrain.asset
-  artifactKey: Guid(b8c692866a7f00f45b6dd836acf1bd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VolumetricLines/BuiltInRenderPipeline/ExampleScenes/ExampleTerrain/ExampleLaserCannonTerrain.asset using Guid(b8c692866a7f00f45b6dd836acf1bd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff7dd28a4713cac08e0d7cc7b6f6bea') in 0.194836 seconds 
+  Time since last request: 18276.945157 seconds.
+  path: Assets/KARAKTERLER/DOST/T-Pose/Li Wei.fbx
+  artifactKey: Guid(aabce3160364d0b44890cd45ddbaf536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KARAKTERLER/DOST/T-Pose/Li Wei.fbx using Guid(aabce3160364d0b44890cd45ddbaf536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f8acdd12cbb8d49fad58fd89301b09') in 0.093122 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Terrains/TerrainData_9630ded4-f1c7-4304-b3b4-961c53c83a43.asset
-  artifactKey: Guid(5916a2f6f4395b44e891d8618908735e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_9630ded4-f1c7-4304-b3b4-961c53c83a43.asset using Guid(5916a2f6f4395b44e891d8618908735e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55739baed5433af57de6b99156330846') in 0.049704 seconds 
+  Time since last request: 2.474421 seconds.
+  path: Assets/KARAKTERLER/DOST/T-Pose/Li Wei.fbx
+  artifactKey: Guid(aabce3160364d0b44890cd45ddbaf536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KARAKTERLER/DOST/T-Pose/Li Wei.fbx using Guid(aabce3160364d0b44890cd45ddbaf536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfce4071381508e9ec7f50118302bfb8') in 0.010880 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Terrains/TerrainData_9b3525cf-3c6d-4d0c-ab75-2429653afede.asset
-  artifactKey: Guid(6aa548eee243bdf4fa6548ed8b97a1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_9b3525cf-3c6d-4d0c-ab75-2429653afede.asset using Guid(6aa548eee243bdf4fa6548ed8b97a1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Tree 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree purpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Kayalar1 couldn't be instanced because the prefab contains no valid mesh renderer.
-Tree prefab at index 4 is missing.
- -> (artifact id: '8c22bf10daa1aeae9fa6ac1ea3cea73f') in 0.079334 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Terrains/TerrainData_3ac4cdf4-3565-4626-9a79-8164b8bea342.asset
-  artifactKey: Guid(92035827d997729448b9574ab1c18227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_3ac4cdf4-3565-4626-9a79-8164b8bea342.asset using Guid(92035827d997729448b9574ab1c18227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522faa1433fead74b51d654b1f8162c8') in 0.011288 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.938076 seconds.
-  path: Assets/Terrains/TerrainData_9746e02f-d6cc-43d3-8092-7ae6ec38f359.asset
-  artifactKey: Guid(22cf994f88f958841a0458e74205624c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_9746e02f-d6cc-43d3-8092-7ae6ec38f359.asset using Guid(22cf994f88f958841a0458e74205624c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree dryFallenBranchesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Tree 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree purpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Kayalar1 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Root 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-Tree prefab at index 6 is missing.
- -> (artifact id: 'b1bee3378ebe8a150baad4eae5b644e7') in 0.145759 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.163952 seconds.
-  path: Assets/Terrains/TerrainData_f59381b7-5fc6-4160-88de-4ee72d6b7895.asset
-  artifactKey: Guid(a8a6c70949f4ecc49a03e9554df141a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_f59381b7-5fc6-4160-88de-4ee72d6b7895.asset using Guid(a8a6c70949f4ecc49a03e9554df141a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree MainTreeC_Test_SRP must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree MainTreeB_SRP must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-Tree prefab at index 2 is missing.
-Tree prefab at index 3 is missing.
-Tree prefab at index 4 is missing.
-Tree prefab at index 5 is missing.
-Tree prefab at index 6 is missing.
-Tree prefab at index 7 is missing.
-Tree prefab at index 8 is missing.
-Tree prefab at index 9 is missing.
-The tree Kayalar1 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree bigLeavesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree grass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree littleGrass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree dryFallenBranchesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree redRock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree simpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Branch 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Branch 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Bush must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Flower 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Ground must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree GroundObject 1 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Leaves must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree WaterPlane must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Mushroom 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Tree 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Mushroom 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (artifact id: '6b1c4a12ffd7d6c477d5c10c28210460') in 0.192951 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 441.853199 seconds.
-  path: Assets/Terrains/TerrainData_1d7bc815-b2f8-4af1-bf93-5e86a6dff92a.asset
-  artifactKey: Guid(313c5c723a66ae74fa51395609e1d21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_1d7bc815-b2f8-4af1-bf93-5e86a6dff92a.asset using Guid(313c5c723a66ae74fa51395609e1d21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998e3ad43463f03a8dadbe5942b084d9') in 0.011912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.733720 seconds.
-  path: Assets/Terrains/TerrainData_c5a54570-9440-4f66-a993-2ef71cea59ee.asset
-  artifactKey: Guid(8f120301d89066448a629d0e4069ddcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_c5a54570-9440-4f66-a993-2ef71cea59ee.asset using Guid(8f120301d89066448a629d0e4069ddcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f013ef345dec7be89f4c261dcd190b95') in 0.011216 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.944407 seconds.
-  path: Assets/Terrains/TerrainData_dc43d3d0-b74a-4ebf-b972-cadf53e51dc0.asset
-  artifactKey: Guid(9e82d1805a180b041bc08e45d586dbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_dc43d3d0-b74a-4ebf-b972-cadf53e51dc0.asset using Guid(9e82d1805a180b041bc08e45d586dbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b345f658d85ac1a4bd06fb7c74d0dc') in 0.015734 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.343893 seconds.
-  path: Assets/Terrains/TerrainData_df1d3bc3-04dc-4865-a389-64fb1e8ab604.asset
-  artifactKey: Guid(daac2c3f56e079a4ea2c5a1b7a09cdf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_df1d3bc3-04dc-4865-a389-64fb1e8ab604.asset using Guid(daac2c3f56e079a4ea2c5a1b7a09cdf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f079e9c0f25088deca758e339982aead') in 0.011841 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.829818 seconds.
-  path: Assets/Terrains/TerrainData_f516a721-fb55-4e17-915d-b7778f707de1.asset
-  artifactKey: Guid(5a6b8b7992895714cb9e46657f409c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_f516a721-fb55-4e17-915d-b7778f707de1.asset using Guid(5a6b8b7992895714cb9e46657f409c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44400b8ed75ae57bf6567461b21b4131') in 0.008624 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 653.398270 seconds.
-  path: Assets/KARAKTERLER
-  artifactKey: Guid(f15d96d0a7d93e44792a26b66bc786a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER using Guid(f15d96d0a7d93e44792a26b66bc786a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8ac62dfef352e86ba920a08545d646') in 0.005202 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.886379 seconds.
-  path: Assets/KARAKTERLER/DOST
-  artifactKey: Guid(0f79d0a0291106c4f862d7a3f5f694fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DOST using Guid(0f79d0a0291106c4f862d7a3f5f694fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21886183e9fdb26d2f51eded27d2fd12') in 0.003225 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.365723 seconds.
-  path: Assets/KARAKTERLER/DUSMAN
-  artifactKey: Guid(e0071ee8f278e384082ffb7675700393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DUSMAN using Guid(e0071ee8f278e384082ffb7675700393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83cdbcfae6c69a5f107ae13f9abdcef') in 0.003292 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 71.059225 seconds.
-  path: Assets/KARAKTERLER/DOST/T-Pose
-  artifactKey: Guid(23c1e8525bdf94e43a85a4514825a3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DOST/T-Pose using Guid(23c1e8525bdf94e43a85a4514825a3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b908aea5113fa83d17f923a242b2a757') in 0.003021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.920439 seconds.
-  path: Assets/KARAKTERLER/DOST/Animasyonlar
-  artifactKey: Guid(24178886e64a0a6469a8aedb96246258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DOST/Animasyonlar using Guid(24178886e64a0a6469a8aedb96246258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c64038c5829b9888cfbbf37b69e31f') in 0.002804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.015981 seconds.
-  path: Assets/KARAKTERLER/DOST/T-Pose/Chris.fbx
-  artifactKey: Guid(d9f47edb0d3d2ac46ab6580a7c6792fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DOST/T-Pose/Chris.fbx using Guid(d9f47edb0d3d2ac46ab6580a7c6792fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce94ad6f0dd5c29ecba027f73ca448f2') in 0.056974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.130711 seconds.
-  path: Assets/KARAKTERLER/DOST/T-Pose/Chris.fbx
-  artifactKey: Guid(d9f47edb0d3d2ac46ab6580a7c6792fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DOST/T-Pose/Chris.fbx using Guid(d9f47edb0d3d2ac46ab6580a7c6792fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bcc1c62e41845fcbca7493f5bf7830') in 0.012389 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.940274 seconds.
-  path: Assets/KARAKTERLER/DOST/T-Pose/Mert.fbx
-  artifactKey: Guid(b936ff1dea56aef4bbd85303fc79b4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DOST/T-Pose/Mert.fbx using Guid(b936ff1dea56aef4bbd85303fc79b4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a51c56f3d0dbaa3062bbf4b547647e') in 0.013631 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.605454 seconds.
-  path: Assets/KARAKTERLER/DOST/T-Pose/Mert.fbx
-  artifactKey: Guid(b936ff1dea56aef4bbd85303fc79b4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KARAKTERLER/DOST/T-Pose/Mert.fbx using Guid(b936ff1dea56aef4bbd85303fc79b4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e568c160ef85dd393034aa73d04785') in 0.013402 seconds 
+  Time since last request: 2.674871 seconds.
+  path: Assets/KARAKTERLER/DOST/T-Pose/Maya.fbx
+  artifactKey: Guid(160f2755e81939440828fd3796df48ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KARAKTERLER/DOST/T-Pose/Maya.fbx using Guid(160f2755e81939440828fd3796df48ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab55cfeb204da26c9ab6354fc1710b6e') in 0.009095 seconds 

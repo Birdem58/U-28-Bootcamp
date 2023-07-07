@@ -15,7 +15,7 @@ C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59278
+63573
 Successfully changed project path to: C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
 C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/admin/Documents/GitHub/U-28-Bootcamp/Salusa-Sendacus
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11904] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 984815449 [EditorId] 984815449 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12936] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 3406841388 [EditorId] 3406841388 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11904] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 984815449 [EditorId] 984815449 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12936] Host "[IP] 192.168.1.36 [Port] 0 [Flags] 2 [Guid] 3406841388 [EditorId] 3406841388 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-86JMNER) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 222.28 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 226.07 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.27f1 (ca3ffb99bcc6)
 [Subsystems] Discovering subsystems at path D:/2021.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -67,118 +67,92 @@ Initialize mono
 Mono path[0] = 'D:/2021.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2021.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2021.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2021.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/2021.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004646 seconds.
+Registered in 0.004413 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 217.17 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 210.31 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.931 seconds
+- Completed reload, in  0.857 seconds
 Domain Reload Profiling:
-	ReloadAssembly (932ms)
-		BeginReloadAssembly (118ms)
+	ReloadAssembly (858ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (690ms)
-			LoadAssemblies (117ms)
+		EndReloadAssembly (640ms)
+			LoadAssemblies (104ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (140ms)
+			SetupTypeCache (125ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (448ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (424ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (217ms)
+				RefreshPlugins (210ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.021124 seconds.
+Registered in 0.019620 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\admin\Documents\GitHub\U-28-Bootcamp\Salusa-Sendacus\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\admin\Documents\GitHub\U-28-Bootcamp\Salusa-Sendacus\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 229.22 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 233.43 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\Users\admin\Documents\GitHub\U-28-Bootcamp\Salusa-Sendacus\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <1c8569827291471e9db0dcd976e97952>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <1c8569827291471e9db0dcd976e97952>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <1c8569827291471e9db0dcd976e97952>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <1c8569827291471e9db0dcd976e97952>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <1c8569827291471e9db0dcd976e97952>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <a53e7cd0bf8c4035ac3e78fb7b43c4a6>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
 Mono: successfully reloaded assembly
-- Completed reload, in  2.216 seconds
+- Completed reload, in  2.073 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2217ms)
-		BeginReloadAssembly (164ms)
+	ReloadAssembly (2074ms)
+		BeginReloadAssembly (146ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1904ms)
-			LoadAssemblies (175ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1788ms)
+			LoadAssemblies (150ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (444ms)
+			SetupTypeCache (423ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (134ms)
-			SetupLoadedEditorAssemblies (1106ms)
+			RebuildScriptCaches (126ms)
+			SetupLoadedEditorAssemblies (1043ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (229ms)
-				BeforeProcessingInitializeOnLoad (203ms)
-				ProcessInitializeOnLoadAttributes (578ms)
+				RefreshPlugins (234ms)
+				BeforeProcessingInitializeOnLoad (195ms)
+				ProcessInitializeOnLoadAttributes (520ms)
 				ProcessInitializeOnLoadMethodAttributes (86ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 2.13 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7364 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 170 unused Assets / (12.7 MB). Loaded Objects now: 7730.
-Memory consumption went from 436.0 MB to 423.3 MB.
-Total: 9.070500 ms (FindLiveObjects: 0.702500 ms CreateObjectMapping: 0.269600 ms MarkObjects: 4.052600 ms  DeleteObjects: 4.043600 ms)
+Memory consumption went from 435.8 MB to 423.2 MB.
+Total: 7.141200 ms (FindLiveObjects: 0.639700 ms CreateObjectMapping: 0.212100 ms MarkObjects: 3.809300 ms  DeleteObjects: 2.479000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -190,122 +164,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 16133.929918 seconds.
-  path: Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LargeFlame01.mat
-  artifactKey: Guid(af29e4d6b5ada10438f9e9b5bb6d19d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LargeFlame01.mat using Guid(af29e4d6b5ada10438f9e9b5bb6d19d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64fd349496290fe11723164c3562d86d') in 0.050308 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 485.690759 seconds.
-  path: Assets/Terrains/New Terrain.asset
-  artifactKey: Guid(34a5e9d1d7d6e1c458804001cc92b2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/New Terrain.asset using Guid(34a5e9d1d7d6e1c458804001cc92b2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Flower 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Grass 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Grass 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Grass preset 1 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Grass preset 2 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Leaves must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Mushroom 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Mushroom 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Root 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Tree 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree WaterPlane must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree purpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Kayalar1 couldn't be instanced because the prefab contains no valid mesh renderer.
-Tree prefab at index 14 is missing.
- -> (artifact id: 'b88e897c6b3fb72e32e60dab17b4d54b') in 0.135923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Terrains/TerrainData_6573e282-7260-44a3-bf6a-fec93211e4bf.asset
-  artifactKey: Guid(174427a4457ffa2409470c87db9ecb37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_6573e282-7260-44a3-bf6a-fec93211e4bf.asset using Guid(174427a4457ffa2409470c87db9ecb37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab25b0c5c50a3b0b279cf58697a926b8') in 0.017864 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Terrains/TerrainData_22d0cbca-9810-4a0e-8322-b29e4f1d5bb6.asset
-  artifactKey: Guid(f9b1d752c19a9144c8cbf7aa0f09f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_22d0cbca-9810-4a0e-8322-b29e4f1d5bb6.asset using Guid(f9b1d752c19a9144c8cbf7aa0f09f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree grass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree littleGrass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree dryFallenBranchesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree redRock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree simpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Branch 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Branch 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Bush must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Flower 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Ground must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree GroundObject 1 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Leaves must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree WaterPlane must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Mushroom 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Tree 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree purpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Root 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (artifact id: '112c5f0db2343aabc68545d6cb8b7fdf') in 0.188667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Terrains/TerrainData_62a5e73d-8386-4cb0-9469-2c25890afc41.asset
-  artifactKey: Guid(eb107e79789d83841a545ff058f26c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_62a5e73d-8386-4cb0-9469-2c25890afc41.asset using Guid(eb107e79789d83841a545ff058f26c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree deadTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree grass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree littleGrass must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree redRock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree rock must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree bigLeavesShrubs must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree littleLeavesShrub must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree shrub must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree dryBranches must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree bigLeavesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree dryFallenBranchesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree dryTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree bigLeavesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree fallenBranchesTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree purpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree simpleTree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Bush must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Flower 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Grass 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Grass 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Grass preset 1 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Grass preset 2 couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Ground must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Mushroom 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Leaves must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Mushroom 2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Root 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Tree 1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree WaterPlane must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree Kayalar1 couldn't be instanced because the prefab contains no valid mesh renderer.
-Tree prefab at index 31 is missing.
- -> (artifact id: 'fce8c26449b62e15894fff681ecf08a2') in 0.184692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.736028 seconds.
-  path: Assets/Terrains/TerrainData_28777b0b-5e60-4d4e-bcd9-2b4843bdad25.asset
-  artifactKey: Guid(e1463fa2c40947b47bd7463fe93c2520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_28777b0b-5e60-4d4e-bcd9-2b4843bdad25.asset using Guid(e1463fa2c40947b47bd7463fe93c2520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d9a32fb3ac010dca79ec0949a8f940') in 0.010316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 442.369416 seconds.
-  path: Assets/Terrains/TerrainData_3eacf725-9922-45b3-b015-2c4415595436.asset
-  artifactKey: Guid(b1c7d4ba221261841b4e643e3d282f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_3eacf725-9922-45b3-b015-2c4415595436.asset using Guid(b1c7d4ba221261841b4e643e3d282f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea26cada134099d969287f865b28e920') in 0.011002 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Terrains/TerrainData_4f119335-20a8-449c-8f3d-b22a5304a03e.asset
-  artifactKey: Guid(b023876ab74ccb54e8bca74d03ec8b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_4f119335-20a8-449c-8f3d-b22a5304a03e.asset using Guid(b023876ab74ccb54e8bca74d03ec8b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67eed975351ead2732ff4181065ad46a') in 0.010968 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.681129 seconds.
-  path: Assets/Terrains/TerrainData_dd993f2a-be4f-48df-9a17-887f4c674785.asset
-  artifactKey: Guid(e69fe77bfce63374caa2832986c2baaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/TerrainData_dd993f2a-be4f-48df-9a17-887f4c674785.asset using Guid(e69fe77bfce63374caa2832986c2baaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504b84b5fb0fcc8f8eadf2a117bc3f93') in 0.013221 seconds 
