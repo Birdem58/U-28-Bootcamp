@@ -7,11 +7,19 @@ public class BasicAI : MonoBehaviour
 
     public Transform target;
 
+    private Vector3 waypointTarget;
+
+    public Transform[] waypoints;
+
+    int waypointindex;
+
 
     private EnemyReferences enemyReferences;
 
     private float pathUpdateDeadline;
 
+    public float patrolDistanceMultiplier = 10;
+    private float patrolDistance;
     private float attackingDistance;
 
     /// <summary>
@@ -24,13 +32,22 @@ public class BasicAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        patrolDistance = (enemyReferences.navMeshagent.stoppingDistance) * patrolDistanceMultiplier;
         attackingDistance = enemyReferences.navMeshagent.stoppingDistance;
+        UpdateDestination();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (target != null)
+        float targetDistance = Vector3.Distance(transform.position, target.position);
+
+        if (targetDistance >= patrolDistance && Vector3.Distance(transform.position, waypointTarget) < 1)
+        {
+            IterateWaypointIndex();
+            UpdateDestination();
+        }
+        else if (targetDistance < patrolDistance)
         {
             bool inRange = Vector3.Distance(transform.position, target.position) <= attackingDistance;
 
@@ -53,7 +70,30 @@ public class BasicAI : MonoBehaviour
             enemyReferences.animator.SetFloat("Speed", 0);
         }
 
+        //if (Vector3.Distance(transform.position, waypointTarget) < 1)
 
+        // if (target != null)
+        //{
+        //    bool inRange = Vector3.Distance(transform.position, target.position) <= attackingDistance;
+
+        //    if (inRange)
+        //   {
+        //      LookAtTarget();
+        //   }
+        //  else
+        //  {
+        // UpdatePath();
+        // }
+        //  enemyReferences.animator.SetBool("Attacking", inRange);
+        // }
+        // if (enemyReferences.navMeshagent.desiredVelocity.sqrMagnitude > 0)
+        //  {
+        //     enemyReferences.animator.SetFloat("Speed", 0.9f);
+        //  }
+        //  else
+        //  {
+        //     enemyReferences.animator.SetFloat("Speed", 0);
+        //  }
     }
     private void LookAtTarget()
     {
@@ -63,15 +103,22 @@ public class BasicAI : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 0.2f);
 
     }
+
+    private void UpdateDestination()
+    {
+        waypointTarget = waypoints[waypointindex].position;
+        enemyReferences.navMeshagent.SetDestination(waypointTarget);
+    }
     private void UpdatePath()
     {
-        // if (Time.time >= pathUpdateDeadline)
-        // {
-        //   Debug.Log("Updating PAth");
-        //    pathUpdateDeadline = Time.time + enemyReferences.parthUpdateDelay;
         enemyReferences.navMeshagent.SetDestination(target.position);
-        // }
-
-
+    }
+    private void IterateWaypointIndex()
+    {
+        waypointindex++;
+        if (waypointindex == waypoints.Length)
+        {
+            waypointindex = 0;
+        }
     }
 }
