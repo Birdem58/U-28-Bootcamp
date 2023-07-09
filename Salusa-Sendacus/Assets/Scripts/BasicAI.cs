@@ -16,11 +16,18 @@ public class BasicAI : MonoBehaviour
 
     private EnemyReferences enemyReferences;
 
+    public float runSpeed = 10;
+    public float walkSpeed = 5;
+
     private float pathUpdateDeadline;
 
     public float patrolDistanceMultiplier = 10;
-    private float patrolDistance;
+    private float patrolDistance = 10;
     private float attackingDistance;
+
+    public bool isPatroling;
+
+    public bool isDead = false;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -41,35 +48,42 @@ public class BasicAI : MonoBehaviour
     void Update()
     {
         float targetDistance = Vector3.Distance(transform.position, target.position);
-
-        if (targetDistance >= patrolDistance && Vector3.Distance(transform.position, waypointTarget) < 1)
+        if (isDead == false)
         {
-            IterateWaypointIndex();
-            UpdateDestination();
-        }
-        else if (targetDistance < patrolDistance)
-        {
-            bool inRange = Vector3.Distance(transform.position, target.position) <= attackingDistance;
+            CheckPatroling();
 
-            if (inRange)
+            if (targetDistance > patrolDistance)
             {
-                LookAtTarget();
+                UpdateDestination();
+                if (Vector3.Distance(transform.position, waypointTarget) < 1)
+                {
+                    IterateWaypointIndex();
+                    UpdateDestination();
+                }
+                isPatroling = true;
             }
-            else
+            else if (targetDistance < patrolDistance)
             {
-                UpdatePath();
-            }
-            enemyReferences.animator.SetBool("Attacking", inRange);
-        }
-        if (enemyReferences.navMeshagent.desiredVelocity.sqrMagnitude > 0)
-        {
-            enemyReferences.animator.SetFloat("Speed", 0.9f);
-        }
-        else
-        {
-            enemyReferences.animator.SetFloat("Speed", 0);
-        }
+                bool inRange = targetDistance <= attackingDistance;
+                isPatroling = false;
 
+                if (inRange)
+                {
+                    LookAtTarget();
+                }
+                else
+                {
+                    UpdatePath();
+                }
+                enemyReferences.animator.SetBool("Attacking", inRange);
+            }
+
+            ManageAnimations();
+
+
+
+        }
+        CheckIfDead();
         //if (Vector3.Distance(transform.position, waypointTarget) < 1)
 
         // if (target != null)
@@ -120,5 +134,52 @@ public class BasicAI : MonoBehaviour
         {
             waypointindex = 0;
         }
+    }
+
+    private void ManageAnimations()
+    {
+        if (enemyReferences.navMeshagent.desiredVelocity.sqrMagnitude > 0 && isPatroling == false)
+        {
+            enemyReferences.animator.SetFloat("Speed", 0.9f);
+            enemyReferences.animator.SetFloat("YurumeSpeed", 0);
+        }
+        else if (enemyReferences.navMeshagent.desiredVelocity.sqrMagnitude > 0 && isPatroling == true)
+        {
+            enemyReferences.animator.SetFloat("Speed", 0);
+            enemyReferences.animator.SetFloat("YurumeSpeed", 0.9f);
+        }
+        else
+        {
+            enemyReferences.animator.SetFloat("YurumeSpeed", 0);
+            enemyReferences.animator.SetFloat("Speed", 0);
+        }
+    }
+
+    private void CheckPatroling()
+    {
+        if (isPatroling == true)
+        {
+            enemyReferences.navMeshagent.speed = walkSpeed;
+        }
+        else if (isPatroling == false)
+        {
+            enemyReferences.navMeshagent.speed = runSpeed;
+        }
+
+    }
+
+    private void CheckIfDead()
+    {
+        if (isDead == true)
+        {
+            enemyReferences.animator.SetBool("isDead", true);
+            StartCoroutine(DestroyCanavar());
+        }
+    }
+
+    IEnumerator DestroyCanavar()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 }
