@@ -28,11 +28,6 @@ public class ThirdPersonHealthManager : MonoBehaviour
     private void Update()
     {
         zamanlayici += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            TakeDamage(10);
-        }
-
 
         if (zamanlayici >= healthRegen && currentHealth < maxHealth)
         {
@@ -42,12 +37,6 @@ public class ThirdPersonHealthManager : MonoBehaviour
 
         }
 
-        healthBar.SetHealth(currentHealth);
-    }
-
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
 

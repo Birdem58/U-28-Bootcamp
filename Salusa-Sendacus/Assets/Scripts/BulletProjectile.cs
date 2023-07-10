@@ -6,6 +6,9 @@ public class BulletProjectile : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
     private Rigidbody bulletRigidbody;
+    public ThirdPersonShooterController thirdPersonShooterController;
+
+    public BasicAI basicAI;
     [SerializeField] private float deleteTime = 5f;
 
 
@@ -13,10 +16,13 @@ public class BulletProjectile : MonoBehaviour
     {
         bulletRigidbody = GetComponent<Rigidbody>();
 
+
+
     }
     private void Start()
     {
         bulletRigidbody.velocity = transform.forward * speed;
+
 
     }
     // Update is called once per frame
@@ -26,6 +32,18 @@ public class BulletProjectile : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if (basicAI != null && thirdPersonShooterController != null)
+        {
+            if (other.CompareTag("Canavar"))
+            {
+                basicAI.canavarCan -= thirdPersonShooterController.Hasar;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+
+            }
+        }
     }
 }

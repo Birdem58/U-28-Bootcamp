@@ -7,6 +7,8 @@ public class BasicAI : MonoBehaviour
 
     public Transform target;
 
+    public GameObject ElCollider;
+
     private Vector3 waypointTarget;
 
     public Transform[] waypoints;
@@ -15,6 +17,10 @@ public class BasicAI : MonoBehaviour
 
 
     private EnemyReferences enemyReferences;
+
+    public int canavarCan = 100;
+
+    public int canavarHasar = 5;
 
     public float runSpeed = 10;
     public float walkSpeed = 5;
@@ -27,7 +33,7 @@ public class BasicAI : MonoBehaviour
 
     public bool isPatroling;
 
-    public bool isDead = false;
+    private bool isDead = false;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -48,6 +54,8 @@ public class BasicAI : MonoBehaviour
     void Update()
     {
         float targetDistance = Vector3.Distance(transform.position, target.position);
+        if (canavarCan <= 0)
+        { isDead = true; }
         if (isDead == false)
         {
             CheckPatroling();
@@ -182,4 +190,5 @@ public class BasicAI : MonoBehaviour
         yield return new WaitForSeconds(5);
         Destroy(gameObject);
     }
+
 }
