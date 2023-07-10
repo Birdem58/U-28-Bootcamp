@@ -22,6 +22,8 @@ public class BulletProjectile : MonoBehaviour
     private void Start()
     {
         bulletRigidbody.velocity = transform.forward * speed;
+        thirdPersonShooterController = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonShooterController>();
+        basicAI = GameObject.FindGameObjectWithTag("Canavar").GetComponent<BasicAI>();
 
 
     }

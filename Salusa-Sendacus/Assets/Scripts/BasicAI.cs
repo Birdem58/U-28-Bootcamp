@@ -48,14 +48,20 @@ public class BasicAI : MonoBehaviour
         patrolDistance = (enemyReferences.navMeshagent.stoppingDistance) * patrolDistanceMultiplier;
         attackingDistance = enemyReferences.navMeshagent.stoppingDistance;
         UpdateDestination();
+        isDead = false;
+        canavarCan = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
         float targetDistance = Vector3.Distance(transform.position, target.position);
-        if (canavarCan <= 0)
-        { isDead = true; }
+        CheckIfDead();
+        if (canavarCan < 0)
+        {
+            isDead = true;
+            Debug.Log("Canavar  cani yok");
+        }
         if (isDead == false)
         {
             CheckPatroling();
@@ -91,7 +97,7 @@ public class BasicAI : MonoBehaviour
 
 
         }
-        CheckIfDead();
+
         //if (Vector3.Distance(transform.position, waypointTarget) < 1)
 
         // if (target != null)

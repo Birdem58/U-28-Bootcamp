@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2abd4dd1304ec4582213520f0d2be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 7701444672144396059, guid: 7e8a2c47260d10e479eb25a674205121, type: 3}
+  target: {fileID: 0}
   ElCollider: {fileID: 3248442525040444229}
   waypoints:
   - {fileID: 0}
@@ -1260,8 +1260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basicAI: {fileID: 3248442523665402297}
-  thirdPersonHealthManager: {fileID: 4323785446657103231, guid: 7e8a2c47260d10e479eb25a674205121,
-    type: 3}
+  thirdPersonHealthManager: {fileID: 0}
 --- !u!1 &3257329941755806872
 GameObject:
   m_ObjectHideFlags: 0

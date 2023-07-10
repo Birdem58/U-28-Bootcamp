@@ -7,15 +7,12 @@ public class CanavarEl : MonoBehaviour
     public BasicAI basicAI;
     public ThirdPersonHealthManager thirdPersonHealthManager;
 
-    GameObject Player;
-
-
-
 
     // Start is called before the first frame update
     void Start()
     {
-
+        thirdPersonHealthManager = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonHealthManager>();
+        basicAI = GameObject.FindGameObjectWithTag("Canavar").GetComponent<BasicAI>();
     }
 
     // Update is called once per frame
