@@ -45,6 +45,7 @@ public class BasicAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         patrolDistance = (enemyReferences.navMeshagent.stoppingDistance) * patrolDistanceMultiplier;
         attackingDistance = enemyReferences.navMeshagent.stoppingDistance;
         UpdateDestination();
