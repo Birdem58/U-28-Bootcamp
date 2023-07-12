@@ -79,17 +79,16 @@ public class BasicAI : MonoBehaviour
             }
             else if (targetDistance < patrolDistance)
             {
-                bool inRange = targetDistance <= attackingDistance;
-                isPatroling = false;
 
+                isPatroling = false;
+                bool inRange = Vector3.Distance(transform.position, target.position) <= attackingDistance;
+
+
+
+                UpdatePath();
                 if (inRange)
-                {
                     LookAtTarget();
-                }
-                else
-                {
-                    UpdatePath();
-                }
+
                 enemyReferences.animator.SetBool("Attacking", inRange);
             }
 
