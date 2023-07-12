@@ -8,10 +8,10 @@ public class LiWeiScript : MonoBehaviour
     public AudioClip AstraVeLiWeiSesi;
     public float Timer = 45;
     public Transform LiWeiTransformu;
-    public Animator Animatör;
-    
+    public Animator Animator;
+
     private bool Tetik = false;
-    
+
     private void OnTriggerEnter(Collider LiWei)
     {
         if (LiWei.gameObject.CompareTag("Player") && !Tetik)
@@ -20,10 +20,10 @@ public class LiWeiScript : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(AstraVeLiWeiSesi);
             GetComponent<CapsuleCollider>().center = new Vector3(0, -20, 0);
             StartCoroutine(StartTimer());
-            
+
         }
-        
-        
+
+
     }
     /*private void Update()
     {
@@ -40,7 +40,7 @@ public class LiWeiScript : MonoBehaviour
     {
         yield return new WaitForSeconds(Timer);
 
-        LiWeiTransformu.position = new Vector3(-1000 , -1000 , -1000);  //438 , 360.3f , 522
+        LiWeiTransformu.position = new Vector3(-1000, -1000, -1000);  //438 , 360.3f , 522
 
 
     }

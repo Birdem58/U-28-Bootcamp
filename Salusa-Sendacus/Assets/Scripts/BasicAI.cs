@@ -15,6 +15,8 @@ public class BasicAI : MonoBehaviour
 
     int waypointindex;
 
+    Vector3 deathGround;
+
 
     private EnemyReferences enemyReferences;
 
@@ -48,6 +50,7 @@ public class BasicAI : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         patrolDistance = (enemyReferences.navMeshagent.stoppingDistance) * patrolDistanceMultiplier;
         attackingDistance = enemyReferences.navMeshagent.stoppingDistance;
+        Vector3 deathGround = new Vector3(0, 0.5f, 0);
         UpdateDestination();
         isDead = false;
         canavarCan = 100;
@@ -56,8 +59,10 @@ public class BasicAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float targetDistance = Vector3.Distance(transform.position, target.position);
         CheckIfDead();
+        ManageAnimations();
         if (canavarCan < 0)
         {
             isDead = true;
@@ -92,7 +97,7 @@ public class BasicAI : MonoBehaviour
                 enemyReferences.animator.SetBool("Attacking", inRange);
             }
 
-            ManageAnimations();
+
 
 
 
@@ -193,8 +198,11 @@ public class BasicAI : MonoBehaviour
 
     IEnumerator DestroyCanavar()
     {
-        yield return new WaitForSeconds(5);
+        // yield return new WaitForSeconds(1);
+        //transform.position -= deathGround;
+        yield return new WaitForSeconds(4);
         Destroy(gameObject);
+
     }
 
 }

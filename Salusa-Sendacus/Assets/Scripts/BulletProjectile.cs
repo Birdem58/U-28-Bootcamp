@@ -34,6 +34,8 @@ public class BulletProjectile : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        basicAI = GameObject.FindGameObjectWithTag("Canavar").GetComponent<BasicAI>();
+
         if (basicAI != null && thirdPersonShooterController != null)
         {
             if (other.CompareTag("Canavar"))
