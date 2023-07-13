@@ -150,6 +150,8 @@ public class ThirdPersonShooterController : MonoBehaviour
 
 
 
+
+
         // eğer nişan alırsak yani Sağ tıka basarsak hem aim virtual kameramız aktif oluyor
         // ki bu sayede yakına bakıyoruz ve ayrıca mathf.lerp kullanarak bu geçiş arasında bir yumuşaklık da sağlıyoruz
         // hemde nişan animasyonunu tetikliyoruz
@@ -188,6 +190,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         {
             if (starterAssetsInputs.shoot && lazerZamanlayici >= saniyebasinalazer)
             {
+
                 int x = Random.Range(0, 2);
                 // Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
                 muzzleFlash.Emit(1);
@@ -197,6 +200,17 @@ public class ThirdPersonShooterController : MonoBehaviour
                 tracer.AddPosition(spawnBulletPosition.position);
                 tracer.transform.position = raycastHit.point;
                 audioSource.PlayOneShot(PistolSoundEffects[x]);
+                var rb2d = raycastHit.collider.GetComponent<Rigidbody>();
+                if (rb2d)
+                {
+                    rb2d.AddForceAtPosition(ray.direction * 20, raycastHit.point, ForceMode.Impulse);
+                }
+
+                var hitbox = raycastHit.collider.GetComponent<Hitbox>();
+                if (hitbox)
+                {
+                    hitbox.OnRaycastHit(this, ray.direction);
+                }
                 starterAssetsInputs.shoot = true;
                 anlikSarjor--;
                 chargeBar.SetCharge(anlikSarjor);
