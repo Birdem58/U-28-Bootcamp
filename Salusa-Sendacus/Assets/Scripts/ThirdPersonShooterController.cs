@@ -52,6 +52,9 @@ public class ThirdPersonShooterController : MonoBehaviour
     private float zamanlayici;
 
     private float lazerZamanlayici;
+    //Yeni deneme alanı 
+    public ParticleSystem muzzleFlash;
+    //yeni deneme alanı
 
     public bool isAming;
 
@@ -132,9 +135,14 @@ public class ThirdPersonShooterController : MonoBehaviour
         // imlecin pozisyonunu transform değerine dönüştürebileceğimiz bir şekilde alıyoruz
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderMask))
         {
+            Debug.DrawLine(ray.origin, raycastHit.point, Color.red, 1.0f);
             debugTransform.position = raycastHit.point;
             mouseWorldPosition = raycastHit.point;
         }
+
+
+
+
         // eğer nişan alırsak yani Sağ tıka basarsak hem aim virtual kameramız aktif oluyor
         // ki bu sayede yakına bakıyoruz ve ayrıca mathf.lerp kullanarak bu geçiş arasında bir yumuşaklık da sağlıyoruz
         // hemde nişan animasyonunu tetikliyoruz
@@ -174,8 +182,9 @@ public class ThirdPersonShooterController : MonoBehaviour
             if (starterAssetsInputs.shoot && lazerZamanlayici >= saniyebasinalazer)
             {
                 int x = Random.Range(0, 2);
-                Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
-                Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
+                // Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
+                muzzleFlash.Emit(1);
+                // Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
                 audioSource.PlayOneShot(PistolSoundEffects[x]);
                 starterAssetsInputs.shoot = true;
                 anlikSarjor--;
@@ -192,8 +201,8 @@ public class ThirdPersonShooterController : MonoBehaviour
             }
             chargeBar.SetCharge(anlikSarjor);
         }
-    }
 
+    }
     //Reloding fonksyonumuz 
     //fonksyonun Ienumerator olmasının sebebi şarjın dolmasının
     // belirli bir zaman alması ve o zaman aralığında da karakterin başka eylmelerde bulunmasını sağlamak örneğin yürüme zıplama vs
@@ -235,6 +244,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         if (starterAssetsInputs.aim)
         {
             gun.SetActive(true);
+
             cursor.SetActive(true);
         }
         else

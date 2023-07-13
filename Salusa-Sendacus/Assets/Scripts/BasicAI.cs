@@ -60,7 +60,7 @@ public class BasicAI : MonoBehaviour
 
         float targetDistance = Vector3.Distance(transform.position, target.position);
         ManageAnimations();
-        if (canavarCan <= 0 && isDead == false)
+        if (canavarCan <= 0.0f && isDead == false)
         {
             isDead = true;
             CheckIfDead();
@@ -202,7 +202,7 @@ public class BasicAI : MonoBehaviour
         Debug.Log("IENUmarator calisiyor");
         yield return new WaitForSeconds(4);
         Destroy(gameObject);
-        //Destroy(CanavarinKendisi);
+
 
     }
 
