@@ -6,10 +6,21 @@ public class Health : MonoBehaviour
 {
     public float maxHealth;
     public float currentHealth;
+
+    public float blinkIntensity;
+
+    public float blinkDuration;
+
+    float blinkTimer;
+
+
     Ragdoll ragdoll;
+
+    SkinnedMeshRenderer skinnedMeshRenderer;
     // Start is called before the first frame update
     void Start()
     {
+        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         ragdoll = GetComponent<Ragdoll>();
         currentHealth = maxHealth;
         var rigidBodies = GetComponentsInChildren<Rigidbody>();
@@ -29,6 +40,7 @@ public class Health : MonoBehaviour
         {
             Die();
         }
+        blinkTimer = blinkDuration;
     }
 
     private void Die()
@@ -40,6 +52,10 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        blinkTimer -= Time.deltaTime;
+        float lerp = Mathf.Clamp01(blinkTimer / blinkDuration);
+        float intensity = (lerp * blinkIntensity) + 1.0f;
+        skinnedMeshRenderer.material.color = Color.white * intensity;
 
     }
 }
