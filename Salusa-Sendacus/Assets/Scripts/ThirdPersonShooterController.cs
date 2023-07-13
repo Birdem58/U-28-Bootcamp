@@ -54,6 +54,8 @@ public class ThirdPersonShooterController : MonoBehaviour
     private float lazerZamanlayici;
     //Yeni deneme alanı 
     public ParticleSystem muzzleFlash;
+
+    public ParticleSystem hitEffect;
     //yeni deneme alanı
 
     public bool isAming;
@@ -135,9 +137,11 @@ public class ThirdPersonShooterController : MonoBehaviour
         // imlecin pozisyonunu transform değerine dönüştürebileceğimiz bir şekilde alıyoruz
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderMask))
         {
-            Debug.DrawLine(ray.origin, raycastHit.point, Color.red, 1.0f);
+            //Debug.DrawLine(ray.origin, raycastHit.point, Color.red, 1.0f);
             debugTransform.position = raycastHit.point;
             mouseWorldPosition = raycastHit.point;
+            hitEffect.transform.position = raycastHit.point;
+            hitEffect.transform.forward = raycastHit.normal;
         }
 
 
@@ -184,6 +188,7 @@ public class ThirdPersonShooterController : MonoBehaviour
                 int x = Random.Range(0, 2);
                 // Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
                 muzzleFlash.Emit(1);
+                hitEffect.Emit(1);
                 // Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
                 audioSource.PlayOneShot(PistolSoundEffects[x]);
                 starterAssetsInputs.shoot = true;
