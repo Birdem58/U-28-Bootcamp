@@ -101,31 +101,6 @@ public class BasicAI : MonoBehaviour
 
 
         }
-
-        //if (Vector3.Distance(transform.position, waypointTarget) < 1)
-
-        // if (target != null)
-        //{
-        //    bool inRange = Vector3.Distance(transform.position, target.position) <= attackingDistance;
-
-        //    if (inRange)
-        //   {
-        //      LookAtTarget();
-        //   }
-        //  else
-        //  {
-        // UpdatePath();
-        // }
-        //  enemyReferences.animator.SetBool("Attacking", inRange);
-        // }
-        // if (enemyReferences.navMeshagent.desiredVelocity.sqrMagnitude > 0)
-        //  {
-        //     enemyReferences.animator.SetFloat("Speed", 0.9f);
-        //  }
-        //  else
-        //  {
-        //     enemyReferences.animator.SetFloat("Speed", 0);
-        //  }
     }
     private void LookAtTarget()
     {
