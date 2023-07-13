@@ -55,6 +55,8 @@ public class ThirdPersonShooterController : MonoBehaviour
     //Yeni deneme alanı 
     public ParticleSystem muzzleFlash;
 
+    public TrailRenderer tracerEffect;
+
     public ParticleSystem hitEffect;
     //yeni deneme alanı
 
@@ -134,6 +136,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
         Ray ray = Camera.main.ScreenPointToRay(screenCenterPoint);
         aimRig.weight = Mathf.Lerp(aimRig.weight, aimRigWeight, Time.deltaTime * 20f);
+
         // imlecin pozisyonunu transform değerine dönüştürebileceğimiz bir şekilde alıyoruz
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderMask))
         {
@@ -190,6 +193,9 @@ public class ThirdPersonShooterController : MonoBehaviour
                 muzzleFlash.Emit(1);
                 hitEffect.Emit(1);
                 // Instantiate(pfBulletProjectile, spawnBulletPosition.position, Quaternion.LookRotation(aimDirection, Vector3.up));
+                var tracer = Instantiate(tracerEffect, spawnBulletPosition.position, Quaternion.identity);
+                tracer.AddPosition(spawnBulletPosition.position);
+                tracer.transform.position = raycastHit.point;
                 audioSource.PlayOneShot(PistolSoundEffects[x]);
                 starterAssetsInputs.shoot = true;
                 anlikSarjor--;
