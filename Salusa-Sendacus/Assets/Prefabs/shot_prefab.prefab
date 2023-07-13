@@ -203,11 +203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f734ed49629288641890e515f2492f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
+  speed: 200
   thirdPersonShooterController: {fileID: 6694254852426293112, guid: 7e8a2c47260d10e479eb25a674205121,
     type: 3}
   basicAI: {fileID: 3248442523665402297, guid: 4df8123a23452e949adbeb3a4f522ca3, type: 3}
-  deleteTime: 3
+  deleteTime: 2
 --- !u!65 &-848117231209609496
 BoxCollider:
   m_ObjectHideFlags: 0

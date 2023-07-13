@@ -15,15 +15,13 @@ public class BulletProjectile : MonoBehaviour
     private void Awake()
     {
         bulletRigidbody = GetComponent<Rigidbody>();
-
-
-
+        thirdPersonShooterController = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonShooterController>();
     }
     private void Start()
     {
         bulletRigidbody.velocity = transform.forward * speed;
-        thirdPersonShooterController = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonShooterController>();
-        basicAI = GameObject.FindGameObjectWithTag("Canavar").GetComponent<BasicAI>();
+
+
 
 
     }
@@ -41,6 +39,8 @@ public class BulletProjectile : MonoBehaviour
             if (other.CompareTag("Canavar"))
             {
                 basicAI.canavarCan -= thirdPersonShooterController.Hasar;
+                Debug.Log(thirdPersonShooterController.Hasar);
+                Debug.Log("hasar da alıyor canavar");
                 Destroy(gameObject);
             }
             else

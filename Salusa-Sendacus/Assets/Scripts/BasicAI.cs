@@ -7,7 +7,7 @@ public class BasicAI : MonoBehaviour
 
     public Transform target;
 
-    public GameObject ElCollider;
+
 
     private Vector3 waypointTarget;
 
@@ -16,6 +16,7 @@ public class BasicAI : MonoBehaviour
     int waypointindex;
 
     Vector3 deathGround;
+    public GameObject CanavarinKendisi;
 
 
     private EnemyReferences enemyReferences;
@@ -47,13 +48,10 @@ public class BasicAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         patrolDistance = (enemyReferences.navMeshagent.stoppingDistance) * patrolDistanceMultiplier;
         attackingDistance = enemyReferences.navMeshagent.stoppingDistance;
-        Vector3 deathGround = new Vector3(0, 0.5f, 0);
         UpdateDestination();
-        isDead = false;
-        canavarCan = 100;
+
     }
 
     // Update is called once per frame
@@ -61,12 +59,13 @@ public class BasicAI : MonoBehaviour
     {
 
         float targetDistance = Vector3.Distance(transform.position, target.position);
-        CheckIfDead();
         ManageAnimations();
-        if (canavarCan < 0)
+        if (canavarCan <= 0 && isDead == false)
         {
             isDead = true;
-            Debug.Log("Canavar  cani yok");
+            CheckIfDead();
+            Debug.Log("Canavar  cani yok ve İsdead çalıştırıldı");
+
         }
         if (isDead == false)
         {
@@ -191,17 +190,19 @@ public class BasicAI : MonoBehaviour
     {
         if (isDead == true)
         {
+            Debug.Log("Check if dead çalışıyor");
             enemyReferences.animator.SetBool("isDead", true);
+            Debug.Log("Animasyon oynanması lazım");
             StartCoroutine(DestroyCanavar());
         }
     }
 
     IEnumerator DestroyCanavar()
     {
-        // yield return new WaitForSeconds(1);
-        //transform.position -= deathGround;
+        Debug.Log("IENUmarator calisiyor");
         yield return new WaitForSeconds(4);
         Destroy(gameObject);
+        //Destroy(CanavarinKendisi);
 
     }
 
