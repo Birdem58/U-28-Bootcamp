@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 77c0edcda2d7ba241acc291e382e4d7f
   - enabled: 1
+    path: "Assets/Scenes/V\u0130deoSahnesi.unity"
+    guid: 6c5e44d010ac90441947a09650afcb6a
+  - enabled: 1
+    path: Assets/Scenes/KarakterSecimSahnesi.unity
+    guid: 78be07aaa24392d4fa837bb9497831bb
+  - enabled: 1
     path: Assets/Scenes/TemelSahne.unity
     guid: bd9a81da0d57a87449f61a8417f67211
   m_configObjects:
