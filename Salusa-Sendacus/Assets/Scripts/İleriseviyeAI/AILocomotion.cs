@@ -27,11 +27,11 @@ public class AILocomotion : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer < 0.0f)
         {
-            float sqDistance = (playerTransform.position - agent.destination).sqrMagnitude;
-            if (sqDistance > maxDistance * maxDistance)
-            {
-                agent.destination = playerTransform.position;
-            }
+            //float sqDistance = (playerTransform.position - agent.destination).sqrMagnitude;
+            //if (sqDistance > maxDistance * maxDistance)
+            //    {
+            agent.destination = playerTransform.position;
+            // }
             timer = maxTime;
         }
         animator.SetFloat("Speed", agent.velocity.magnitude);

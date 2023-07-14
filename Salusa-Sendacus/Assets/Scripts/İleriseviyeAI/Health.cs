@@ -55,6 +55,22 @@ public class Health : MonoBehaviour
         healtBar.gameObject.SetActive(false);
         ragdoll.ActivateRagdoll();
         agent.speed = 0.0f;
+        StartCoroutine(OnDeathBlink());
+    }
+
+    IEnumerator OnDeathBlink()
+    {
+        yield return new WaitForSeconds(1);
+        blinkTimer = blinkDuration;
+        yield return new WaitForSeconds(0.9f);
+        blinkTimer = blinkDuration - 0.1f;
+        yield return new WaitForSeconds(0.9f);
+        blinkTimer = blinkDuration - 0.1f;
+        yield return new WaitForSeconds(0.9f);
+        blinkTimer = blinkDuration - 0.1f;
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
+
     }
 
 
