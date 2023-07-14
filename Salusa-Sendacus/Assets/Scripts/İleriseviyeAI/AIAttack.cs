@@ -8,7 +8,7 @@ public class AIAttack : MonoBehaviour
 
     [SerializeField] private UnityEvent _damagePlayer;
 
-    int hasarr = 20;
+    public int hasar = 5;
     // Start is called before the first frame update
     void Start()
     {

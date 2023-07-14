@@ -11,7 +11,7 @@ public class ThirdPersonHealthManager : MonoBehaviour
 
     public int maxHealth = 100;
 
-    public int aiDamage = 15;
+    public int aiDamage = 5;
     public int currentHealth;
 
     public int regenAmount = 1;
@@ -51,7 +51,7 @@ public class ThirdPersonHealthManager : MonoBehaviour
 
     public void CanBarRegen()
     {
-        maxHealth += 20;
+        maxHealth += 2;
         audioSource.PlayOneShot(_canSesi);
         if (regenAmount <= 50)
         {
@@ -61,7 +61,7 @@ public class ThirdPersonHealthManager : MonoBehaviour
 
         if (healthRegen >= 0.1f)
         {
-            healthRegen -= 0.05f;
+            healthRegen -= 0.002f;
             canText.SetActive(true);
         }
 

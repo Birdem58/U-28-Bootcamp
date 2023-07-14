@@ -282,7 +282,7 @@ public class ThirdPersonShooterController : MonoBehaviour
 
     public void ChargeHasar()
     {
-        Hasar += 5;
+        Hasar += 1;
         audioSource.PlayOneShot(_hasarArttir);
         lightParticle.SetActive(true);
         StartCoroutine(StopHasarEffect());
@@ -294,12 +294,12 @@ public class ThirdPersonShooterController : MonoBehaviour
         audioSource.PlayOneShot(_sarjToplama);
         if (sarjorDolumHizi >= 0.3f)
         {
-            sarjorDolumHizi -= 0.1f;
+            sarjorDolumHizi -= 0.05f;
             regenText.SetActive(true);
         }
         if (sarjorYenilenme > 2f)
         {
-            sarjorYenilenme -= 0.1f;
+            sarjorYenilenme -= 0.02f;
             regenText.SetActive(true);
         }
         StartCoroutine(ShowRegenText());
