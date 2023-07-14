@@ -68,6 +68,14 @@ public class Health : MonoBehaviour
         blinkTimer = blinkDuration - 0.1f;
         yield return new WaitForSeconds(0.9f);
         blinkTimer = blinkDuration - 0.1f;
+        yield return new WaitForSeconds(0.9f);
+        blinkTimer = blinkDuration - 0.1f;
+        yield return new WaitForSeconds(0.9f);
+        blinkTimer = blinkDuration - 0.1f;
+        yield return new WaitForSeconds(0.9f);
+        blinkTimer = blinkDuration - 0.1f;
+        yield return new WaitForSeconds(0.9f);
+        blinkTimer = blinkDuration - 0.1f;
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
 

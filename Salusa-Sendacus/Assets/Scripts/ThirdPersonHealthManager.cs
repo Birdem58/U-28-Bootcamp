@@ -10,6 +10,8 @@ public class ThirdPersonHealthManager : MonoBehaviour
     public HealthBar healthBar;
 
     public int maxHealth = 100;
+
+    public int aiDamage = 15;
     public int currentHealth;
 
     public int regenAmount = 1;
@@ -64,5 +66,11 @@ public class ThirdPersonHealthManager : MonoBehaviour
         }
 
         StartCoroutine(ShowCanText());
+    }
+
+    public void TakeDamagePlayer()
+    {
+        currentHealth -= aiDamage;
+        healthBar.SetHealth(currentHealth);
     }
 }
