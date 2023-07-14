@@ -7,6 +7,6 @@ public class BacktoPreScene : MonoBehaviour
 {
     public void backtoPreScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }
