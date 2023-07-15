@@ -241,10 +241,49 @@ Sprint Retrospective: Bayram tatili sebebi takımın kendi içerisinde iletişim
 https://miro.com/app/board/uXjVMAa8O4w=/
 
 
+# Sprint 3
+
+# Sprint Notları
+
+Genel Özet: 2. Sprint toplantısında planlanan hedefler tamamlandı. Takım içi iletişim iyiydi. Uyumlu ve koordine bir çalışma ortamı yakalandı.
+
+Sprint içinde tamamlanması tahmin edilen puan: 105 Puan
+
+
+Puan Tamamlama Mantığı: Sprint 1'de belirtildiği üzere 3 sprint, toplam 300 puan üzerinden değerlendirme yapıldı. 2. Sprintte 100 puan tamamlanamayıp 95 puan elde edildiği için 3. Sprinte 105 ğuan tanımlandı.
+
+Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Toplantı dosyayaları paylaşılmıştır.
 
 
 
 
+![WhatsApp Image 2023-07-15 at 21 41 04](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/d3d614eb-fff8-46ec-81af-26ec91ddad85)
 
 
+
+![WhatsApp Image 2023-07-15 at 21 40 25](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/e43a932d-e5fc-4733-ad38-fb14ad13c816)
+
+
+![WhatsApp Image 2023-07-15 at 21 38 45](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/46ace910-0eb9-4db9-ad44-c57c7855fb78)
+
+
+Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Discord üzerinden online toplantı yapmaktadır. Üyelerin müsaitlik durumununun belirlenmesi adına Google Takvim kullanılmıştır. Görev yönetimi için Miro kullanılmaktadır. İlgili dosya örnekleri eklenmiştir.
+
+Sprint board update: Sprint board screenshotı:
+
+
+
+Burndown Chart            
+
+![Ekran Görüntüsü (11)](https://github.com/Birdem58/U-28-Bootcamp/assets/129898889/f1545653-cf0e-48dd-aa07-34a2c29eebe0)
+
+
+Ürün Durumu: Ekran görüntüleri ve Ekran Kayıtları:
+
+Sprint Review: Oyunun tüm tekinik ve tasarımsal görevleri tamamlandı. Çalışan bir ürün elde edildi.
+
+Sprint Retrospective: Herhangi olumsuz bir durumla karşılasılmadı. Takım üyeleri birbirlerine karşı gösterdikleri nezaket ve çalışma azminden dolayı birbirine teşekkürlerini iletti.
+
+# Product Backlog Url
+https://miro.com/app/board/uXjVMAa8O4w=/
 
