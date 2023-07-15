@@ -245,12 +245,12 @@ https://miro.com/app/board/uXjVMAa8O4w=/
 
 # Sprint Notları
 
-Genel Özet: 2. Sprint toplantısında planlanan hedefler tamamlandı. Takım içi iletişim iyiydi. Uyumlu ve koordine bir çalışma ortamı yakalandı.
+Genel Özet: 3. Sprint toplantısında planlanan hedefler tamamlandı. Takım içi iletişim iyiydi. Uyumlu ve koordine bir çalışma ortamı yakalandı.
 
 Sprint içinde tamamlanması tahmin edilen puan: 105 Puan
 
 
-Puan Tamamlama Mantığı: Sprint 1'de belirtildiği üzere 3 sprint, toplam 300 puan üzerinden değerlendirme yapıldı. 2. Sprintte 100 puan tamamlanamayıp 95 puan elde edildiği için 3. Sprinte 105 ğuan tanımlandı.
+Puan Tamamlama Mantığı: Sprint 1'de belirtildiği üzere 3 sprint, toplam 300 puan üzerinden değerlendirme yapıldı. 2. Sprintte 100 puan tamamlanamayıp 95 puan elde edildiği için 3. Sprinte 105 puan tanımlandı.
 
 Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Toplantı dosyayaları paylaşılmıştır.
 
