@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class CanavarEl : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip _canavarHasar;
+
     public BasicAI basicAI;
     public ThirdPersonHealthManager thirdPersonHealthManager;
+
 
 
     void Awake()
@@ -32,7 +36,9 @@ public class CanavarEl : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
+                audioSource.PlayOneShot(_canavarHasar);
                 Debug.Log("HasarVeriyorCAnavar");
+                
                 thirdPersonHealthManager.currentHealth -= basicAI.canavarHasar;
             }
         }

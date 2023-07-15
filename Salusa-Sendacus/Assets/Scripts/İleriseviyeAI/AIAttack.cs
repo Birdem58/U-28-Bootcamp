@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 public class AIAttack : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+[SerializeField] private AudioClip _canavarHasar;
+
 
     [SerializeField] private UnityEvent _damagePlayer;
 
@@ -24,6 +27,7 @@ public class AIAttack : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            audioSource.PlayOneShot(_canavarHasar);
             _damagePlayer.Invoke();
         }
     }

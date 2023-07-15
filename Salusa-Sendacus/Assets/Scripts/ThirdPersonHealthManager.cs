@@ -7,6 +7,7 @@ public class ThirdPersonHealthManager : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip _canSesi;
     [SerializeField] private GameObject canText;
+    [SerializeField] private AudioClip _hasarAlma;
     public HealthBar healthBar;
 
     public int maxHealth = 100;
@@ -70,6 +71,7 @@ public class ThirdPersonHealthManager : MonoBehaviour
 
     public void TakeDamagePlayer()
     {
+        audioSource.PlayOneShot(_hasarAlma);
         currentHealth -= aiDamage;
         healthBar.SetHealth(currentHealth);
     }
