@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -107,6 +108,11 @@ namespace StarterAssets
         private CharacterController _controller;
         private StarterAssetsInputs _input;
         private GameObject _mainCamera;
+
+        [SerializeField] private UnityEvent _jumped;
+        [SerializeField] private UnityEvent _moved;
+        bool moveInvokeControl = false;
+        bool jumpInvokeControl = false;
 
         private const float _threshold = 0.01f;
 
@@ -240,9 +246,9 @@ namespace StarterAssets
                 // note T in Lerp is clamped, so we don't need to clamp our speed
                 _speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * inputMagnitude,
                     Time.deltaTime * SpeedChangeRate);
-
                 // round speed to 3 decimal places
                 _speed = Mathf.Round(_speed * 1000f) / 1000f;
+                
             }
             else
             {
@@ -259,6 +265,7 @@ namespace StarterAssets
             // if there is a move input rotate player when the player is moving
             if (_input.move != Vector2.zero)
             {
+                
                 _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
                                   _mainCamera.transform.eulerAngles.y;
                 float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
@@ -316,6 +323,12 @@ namespace StarterAssets
                     if (_hasAnimator)
                     {
                         _animator.SetBool(_animIDJump, true);
+                        if (jumpInvokeControl != true)
+                        {
+                            _jumped.Invoke();
+                            jumpInvokeControl = true;
+                        }
+                        
                     }
                 }
 
@@ -384,6 +397,12 @@ namespace StarterAssets
                 {
                     var index = Random.Range(0, FootstepAudioClips.Length);
                     AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                    //burda kontrol ediyoruz hareketi
+                    if(moveInvokeControl != true)
+                    {
+                    _moved.Invoke();
+                    moveInvokeControl = true;
+                    }
                 }
             }
         }

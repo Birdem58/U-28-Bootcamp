@@ -5,6 +5,7 @@ using Cinemachine;
 using StarterAssets;
 using UnityEngine.InputSystem;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.Events;
 
 public class ThirdPersonShooterController : MonoBehaviour
 {
@@ -38,6 +39,11 @@ public class ThirdPersonShooterController : MonoBehaviour
     [SerializeField] private AudioClip _sarjBitis;
     [SerializeField] private AudioClip _sarjToplama;
     [SerializeField] private AudioClip _hasarArttir;
+
+    //burda obj list
+    [SerializeField] private UnityEvent _shooted;
+    bool shootControl = true;
+    //burda obj list
     public AudioClip[] PistolSoundEffects;
 
     // public ParticleSystem upgrade;
@@ -189,7 +195,8 @@ public class ThirdPersonShooterController : MonoBehaviour
         if (isRealoding == false && isAming)
         {
             if (starterAssetsInputs.shoot && lazerZamanlayici >= saniyebasinalazer)
-            {
+            {   
+                
 
                 int x = Random.Range(0, 2);
                 // Vector3 aimDirection = (mouseWorldPosition - spawnBulletPosition.position).normalized;
@@ -215,6 +222,12 @@ public class ThirdPersonShooterController : MonoBehaviour
                 anlikSarjor--;
                 chargeBar.SetCharge(anlikSarjor);
                 lazerZamanlayici = 0;
+
+                if(shootControl)
+                {
+                    shootControl = false;
+                    _shooted.Invoke();
+                }
 
             }
             // eğer şarjımız bitmişse de burda corotine'i başlatıyorum.
@@ -259,6 +272,7 @@ public class ThirdPersonShooterController : MonoBehaviour
         yield return new WaitForSeconds(1);
         lightParticle.SetActive(false);
     }
+
 
     //Karakter Aim aldığında hedef cursorünün ve Lazer silahının görünmesini sağlıyor.
     //bu fonksyonun referansını lateupdate de görmemizin sebebi animasyonlardan daha 
