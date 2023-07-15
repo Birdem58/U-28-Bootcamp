@@ -25,6 +25,6 @@ public class MayaScripti : MonoBehaviour
     {
         yield return new WaitForSeconds(Timer);
 
-        MayaTransformu.position = new Vector3(460, 361, 522);
+        MayaTransformu.position = new Vector3(-1000,-1000,-1000);
     }
 }

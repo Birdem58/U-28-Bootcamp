@@ -25,6 +25,6 @@ public class MertScript : MonoBehaviour
     {
         yield return new WaitForSeconds(Timer);
 
-        MertTransformu.position = new Vector3(460, 361, 522);
+        MertTransformu.position = new Vector3(-1000,-1000,-1000);
     }
 }
