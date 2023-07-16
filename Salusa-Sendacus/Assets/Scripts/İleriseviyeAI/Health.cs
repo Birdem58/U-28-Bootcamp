@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
+
 public class Health : MonoBehaviour
 {
     public float maxHealth;
@@ -10,6 +12,7 @@ public class Health : MonoBehaviour
     public float blinkIntensity;
 
     public float blinkDuration;
+    public bool isdead = false;
 
     float blinkTimer;
 
@@ -21,6 +24,9 @@ public class Health : MonoBehaviour
     SkinnedMeshRenderer skinnedMeshRenderer;
 
     UIHealtbar healtBar;
+
+    [SerializeField] private UnityEvent _canavarOlum;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +59,11 @@ public class Health : MonoBehaviour
     private void Die()
     {
         healtBar.gameObject.SetActive(false);
+        if (!isdead)
+        {
+            _canavarOlum.Invoke();
+            isdead = true;
+        }
         ragdoll.ActivateRagdoll();
         agent.speed = 0.0f;
         StartCoroutine(OnDeathBlink());
@@ -62,12 +73,6 @@ public class Health : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         blinkTimer = blinkDuration;
-        yield return new WaitForSeconds(0.9f);
-        blinkTimer = blinkDuration - 0.1f;
-        yield return new WaitForSeconds(0.9f);
-        blinkTimer = blinkDuration - 0.1f;
-        yield return new WaitForSeconds(0.9f);
-        blinkTimer = blinkDuration - 0.1f;
         yield return new WaitForSeconds(0.9f);
         blinkTimer = blinkDuration - 0.1f;
         yield return new WaitForSeconds(0.9f);

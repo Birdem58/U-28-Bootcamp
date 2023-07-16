@@ -44,7 +44,7 @@ public class LiWeiScript : MonoBehaviour
 
     IEnumerator KonusmaSonrasi()
     {
-        yield return new WaitForSeconds(25);
+        yield return new WaitForSeconds(35);
         _liWeiBilgi.Invoke();
     }
 

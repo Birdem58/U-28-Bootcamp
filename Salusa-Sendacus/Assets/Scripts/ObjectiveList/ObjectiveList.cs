@@ -17,8 +17,23 @@ public class ObjectiveList : MonoBehaviour
     public bool liweiDinle = true;
 
     public bool liweiBilgi = true;
+
+    public bool chrisCanavarSavas = true;
+
+    public bool chrisBulunmadi = true;
+
+    public bool chriskonusulmadi = true;
+
+    public bool mayailktriggerduvar = true;
+
+    public bool bantidDuvarTrigger = true;
+
+    public bool mayaikincitriggerduvar = true;
+
+    public int banditCanavarCount;
+    public int chrisCanavarCount;
     public int objtutKristal = 0;
-    int index = 0;
+    public int index = 0;
     void Start()
     {
 
@@ -101,9 +116,94 @@ public class ObjectiveList : MonoBehaviour
             ObjTransiton();
         }
     }
+
+    public void ChrisCanavarSavasi()
+    {
+        if (chrisCanavarSavas && index == 8)
+        {
+            chrisCanavarSavas = false;
+            ObjTransiton();
+
+        }
+    }
+
+    public void ChrisCanavarOlumCount()
+    {
+        chrisCanavarCount++;
+        if (chrisCanavarCount == 5 && index == 9)
+        {
+            chrisCanavarCount = 0;
+            ObjTransiton();
+        }
+
+    }
+
+    public void ChrisBulDuvarTrigger()
+    {
+        if (chrisBulunmadi && index == 10)
+        {
+            chrisBulunmadi = false;
+            ObjTransiton();
+        }
+
+    }
+
+    public void ChrisKonusma()
+    {
+        if (chriskonusulmadi && index == 11)
+        {
+            chriskonusulmadi = false;
+            ObjTransiton();
+        }
+
+    }
+
+    public void MayaIlkDuvarTrigger()
+    {
+        if (mayailktriggerduvar && index == 12)
+        {
+            mayailktriggerduvar = true;
+            ObjTransiton();
+        }
+    }
+
+    public void BanditDuvarTrigger()
+    {
+        if (bantidDuvarTrigger && index == 13)
+        {
+            bantidDuvarTrigger = false;
+            ObjTransiton();
+
+        }
+    }
+
+    public void BanditCanavarOlum()
+    {
+        banditCanavarCount++;
+        if (banditCanavarCount == 3 && index == 14)
+        {
+            banditCanavarCount = 0;
+            ObjTransiton();
+        }
+    }
+    public void MayaIkinciDuvarTrigger()
+    {
+        if (mayaikincitriggerduvar && index == 15)
+        {
+            mayaikincitriggerduvar = true;
+            ObjTransiton();
+        }
+    }
+
+
     void ObjTransiton()
     {
         audioSource.PlayOneShot(_objTamamlama);
+        index++;
+
+    }
+    void ObjTransitonWithoutSound()
+    {
         index++;
 
     }
@@ -140,12 +240,74 @@ public class ObjectiveList : MonoBehaviour
         }
         if (index == 7)
         {
-            objectivetext.text = "Li Wei'yi dinle";
+            objectivetext.text = "Li Wei Chris'in köyde olduğunu söyledi onu kurtarmak için köye in";
         }
         if (index == 8)
         {
-            objectivetext.text = "Chris'i kurtarmak için köye in";
+            objectivetext.text = "Canavarları Öldür ";
         }
+        if (index == 9)
+        {
+            objectivetext.text = "Canavarları Öldür" + chrisCanavarCount.ToString() + " /5";
+        }
+        if (index == 10)
+        {
+            objectivetext.text = "Chris'i Bul !";
+        }
+        if (index == 11)
+        {
+            objectivetext.text = "Chris ile konuş !";
+        }
+        if (index == 12)
+        {
+            objectivetext.text = "Gemiye Geri Dön !";
+        }
+        if (index == 13)
+        {
+            objectivetext.text = " Geminin Burnunun Baktığı Vadiye Doğru İlerle";
+        }
+        if (index == 14)
+        {
+            objectivetext.text = "Seni Pusuya Düşüren Canavarları Öldür" + banditCanavarCount.ToString() + " /3";
+        }
+        if (index == 15)
+        {
+            objectivetext.text = "Vadiye Doğru ilerle";
+        }
+        if (index == 16)
+        {
+            objectivetext.text = "Maya'nın Olduğu Köyü Bul (ipucu: büyük mantarları takip et )";
+        }
+        if (index == 17)
+        {
+            objectivetext.text = "";
+        }
+        if (index == 18)
+        {
+            objectivetext.text = "";
+        }
+        if (index == 19)
+        {
+            objectivetext.text = "";
+        }
+        if (index == 20)
+        {
+            objectivetext.text = "";
+        }
+        if (index == 21)
+        {
+            objectivetext.text = "";
+        }
+        if (index == 22)
+        {
+            objectivetext.text = "";
+        }
+        if (index == 23)
+        {
+            objectivetext.text = "";
+        }
+
+
 
     }
 

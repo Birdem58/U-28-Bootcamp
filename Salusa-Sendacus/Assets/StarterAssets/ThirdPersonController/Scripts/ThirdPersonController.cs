@@ -238,7 +238,6 @@ namespace StarterAssets
                 if (runInvokeControl)
                 {
                     _Run.Invoke();
-                    runInvokeControl = false;
                 }
             }
 
@@ -342,7 +341,7 @@ namespace StarterAssets
                         if (jumpInvokeControl != true)
                         {
                             _jumped.Invoke();
-                            jumpInvokeControl = true;
+
                         }
 
                     }
@@ -417,7 +416,7 @@ namespace StarterAssets
                     if (moveInvokeControl != true)
                     {
                         _moved.Invoke();
-                        moveInvokeControl = true;
+
                     }
                 }
             }

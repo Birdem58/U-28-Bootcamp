@@ -6,6 +6,7 @@ public class Ragdoll : MonoBehaviour
 {
     Rigidbody[] rigidBodies;
     Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,7 @@ public class Ragdoll : MonoBehaviour
         {
             rigidbody.isKinematic = false;
         }
+
         animator.enabled = false;
     }
 }

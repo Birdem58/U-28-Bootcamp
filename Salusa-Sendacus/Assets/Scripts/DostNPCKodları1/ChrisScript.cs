@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class ChrisScript : MonoBehaviour
 {
     public AudioClip AstraVeChrisSesi;
     public float Timer = 45;
     public Transform ChrisTransformu;
     private bool Tetik = false;
-    
-    
 
-    
-    
-    
+    [SerializeField] UnityEvent _ChrisKonusuyor;
+
+
+
+
+
+
 
     private void OnTriggerEnter(Collider LiWei)
     {
@@ -26,21 +28,23 @@ public class ChrisScript : MonoBehaviour
         }
         if (Timer <= 0)
         {
-            
+
             print("GTX");
-            
+
         }
 
     }
-    
+
     IEnumerator StartTimer()
     {
+        yield return new WaitForSeconds(30);
+        _ChrisKonusuyor.Invoke();
         yield return new WaitForSeconds(Timer);
 
-        ChrisTransformu.position = new Vector3(-1000 , -1000 , -1000); //434 360.7 518
-        
-        
-        
+        ChrisTransformu.position = new Vector3(-1000, -1000, -1000); //434 360.7 518
+
+
+
     }
 }
 
