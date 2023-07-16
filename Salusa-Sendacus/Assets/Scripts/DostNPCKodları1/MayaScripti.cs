@@ -7,15 +7,26 @@ public class MayaScripti : MonoBehaviour
     public AudioClip AstraVeMayaSesi;
     public float Timer = 45;
     public Transform MayaTransformu;
-    private bool Tetik = false;
+    private bool rt = false;
+    public Transform Bosluk;
+    private Animator Animatör;
+    public GameObject Colliderdegis;
+    
+    private void Start()
+    {
+        Animatör = GetComponent<Animator>();
+        Colliderdegis.GetComponent<BoxCollider>().enabled = true;
+        
+    }
+    
 
     private void OnTriggerEnter(Collider LiWei)
     {
-        if (LiWei.gameObject.CompareTag("Player") && !Tetik)
+        if (LiWei.gameObject.CompareTag("Player") && !rt)
         {
-            Tetik = true;
+            rt = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeMayaSesi);
-            GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
+            //GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
             StartCoroutine(StartTimer());
         }
 
@@ -25,6 +36,10 @@ public class MayaScripti : MonoBehaviour
     {
         yield return new WaitForSeconds(Timer);
 
-        MayaTransformu.position = new Vector3(-1000,-1000,-1000);
+        MayaTransformu.position = Bosluk.position;
+        MayaTransformu.rotation = Quaternion.Euler(0, 270, 0);
+        
+        Animatör.SetBool("rt", true);
+        Colliderdegis.GetComponent<BoxCollider>().enabled = true;
     }
 }

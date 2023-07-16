@@ -7,40 +7,41 @@ using UnityEngine.Events;
 public class LiWeiScript : MonoBehaviour
 {
     public AudioClip AstraVeLiWeiSesi;
-    public float Timer = 45;
+    public float Timer = 35;
     public Transform LiWeiTransformu;
-    public Animator Animator;
+    private Animator Animatör;
+    public GameObject Colliderdegis;
     [SerializeField] private UnityEvent _liWeiKonusma;
     [SerializeField] private UnityEvent _liWeiBilgi;
+    public Transform Bosluk;
+    private bool asd = false;
+    
 
-    private bool Tetik = false;
+    private void Start()
+    {
+        Animatör = GetComponent<Animator>();
+        Colliderdegis.GetComponent<SphereCollider>().enabled = true;
+        
+    }
+
+    
 
     private void OnTriggerEnter(Collider LiWei)
     {
-        if (LiWei.gameObject.CompareTag("Player") && !Tetik)
+        if (LiWei.gameObject.CompareTag("Player") && !asd)
         {
-            Tetik = true;
+            asd = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeLiWeiSesi);
-            GetComponent<CapsuleCollider>().center = new Vector3(0, -20, 0);
+            //GetComponent<CapsuleCollider>().center = new Vector3(0, -20, 0);
             _liWeiKonusma.Invoke();
             StartCoroutine(KonusmaSonrasi());
             StartCoroutine(StartTimer());
-
+            Colliderdegis.GetComponent<SphereCollider>().enabled = false;
         }
 
 
     }
-    /*private void Update()
-    {
-        if(Timer > 0)
-        {
-            Timer -= Time.deltaTime;
-        }
-        else
-        {
-            LiWeiTransformu.position = new Vector3(460, 361 ,522);
-        }
-    }*/
+    
 
     IEnumerator KonusmaSonrasi()
     {
@@ -52,34 +53,14 @@ public class LiWeiScript : MonoBehaviour
     {
         yield return new WaitForSeconds(Timer);
 
-        LiWeiTransformu.position = new Vector3(-1000, -1000, -1000);  //438 , 360.3f , 522
+        LiWeiTransformu.position = Bosluk.position;
+        LiWeiTransformu.rotation = Quaternion.Euler(0, 90, 0);
+        
+        Animatör.SetBool("asd", true);
+        Colliderdegis.GetComponent<SphereCollider>().enabled = true;
 
 
     }
 }
-/*public class ChrisScript : MonoBehaviour
-{
-    public AudioClip AstraVeChrisesi;
-    public float Timer = 45;
-    public Transform ChrisTransformu;
-    private bool Tetik = false;
 
-    private void OnTriggerEnter(Collider Chris)
-    {
-        if (Chris.gameObject.CompareTag("Player") && !Tetik)
-        {
-            Tetik = true;
-            GetComponent<AudioSource>().PlayOneShot(AstraVeChrisesi);
-            GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
-            StartCoroutine(StartTimer());
-        }
-
-    }
-    IEnumerator StartTimer()
-    {
-        yield return new WaitForSeconds(Timer);
-
-        ChrisTransformu.position = new Vector3(460, 361, 522);
-    }
-}*/
 

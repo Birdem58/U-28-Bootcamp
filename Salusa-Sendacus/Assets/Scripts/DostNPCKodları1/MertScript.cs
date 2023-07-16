@@ -7,15 +7,31 @@ public class MertScript : MonoBehaviour
     public AudioClip AstraVeMertSesi;
     public float Timer = 45;
     public Transform MertTransformu;
-    private bool Tetik = false;
+    private bool gtx = false;
+    private Animator Animatör;
+    public GameObject Colliderdegis;
+    public Transform Bosluk;
+    
+    
+
+
+    private void Start()
+    {
+        Animatör = GetComponent<Animator>();
+        Colliderdegis.GetComponent<BoxCollider>().enabled = true;
+        
+    }
+    
+
+
 
     private void OnTriggerEnter(Collider LiWei)
     {
-        if (LiWei.gameObject.CompareTag("Player") && !Tetik)
+        if (LiWei.gameObject.CompareTag("Player") && !gtx)
         {
-            Tetik = true;
+            gtx = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeMertSesi);
-            GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
+            //GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
             StartCoroutine(StartTimer());
         }
 
@@ -25,6 +41,9 @@ public class MertScript : MonoBehaviour
     {
         yield return new WaitForSeconds(Timer);
 
-        MertTransformu.position = new Vector3(-1000,-1000,-1000);
+        MertTransformu.position = Bosluk.position;
+        Animatör.SetBool("gtx", true);
+        Colliderdegis.GetComponent<BoxCollider>().enabled = true;
+        
     }
 }

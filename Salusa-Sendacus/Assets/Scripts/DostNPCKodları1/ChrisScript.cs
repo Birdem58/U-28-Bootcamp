@@ -7,11 +7,21 @@ public class ChrisScript : MonoBehaviour
     public AudioClip AstraVeChrisSesi;
     public float Timer = 45;
     public Transform ChrisTransformu;
-    private bool Tetik = false;
+    private bool fg = false;
+    public Transform Bosluk;
+    public GameObject Colliderdegis;
+    private Animator Animatör;
+    
 
     [SerializeField] UnityEvent _ChrisKonusuyor;
 
-
+    private void Start()
+    {
+        Colliderdegis.GetComponent<BoxCollider>().enabled = true;
+        Animatör = GetComponent<Animator>();
+        
+    }
+    
 
 
 
@@ -19,19 +29,14 @@ public class ChrisScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider LiWei)
     {
-        if (LiWei.gameObject.CompareTag("Player") && !Tetik)
+        if (LiWei.gameObject.CompareTag("Player") && !fg)
         {
-            Tetik = true;
+            fg = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeChrisSesi);
-            GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
+            //GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
             StartCoroutine(StartTimer());
         }
-        if (Timer <= 0)
-        {
-
-            print("GTX");
-
-        }
+        
 
     }
 
@@ -40,9 +45,10 @@ public class ChrisScript : MonoBehaviour
         yield return new WaitForSeconds(30);
         _ChrisKonusuyor.Invoke();
         yield return new WaitForSeconds(Timer);
-
-        ChrisTransformu.position = new Vector3(-1000, -1000, -1000); //434 360.7 518
-
+        Animatör.SetBool("fg", true);
+        ChrisTransformu.position = Bosluk.position;
+        ChrisTransformu.rotation = Quaternion.Euler(0, 270, 0);
+        
 
 
     }
