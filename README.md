@@ -283,6 +283,8 @@ Burndown Chart
 
 ![Maya'ya Giden Yol](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/e1a07ce3-7375-48a7-9fa3-12fbdf602e29)
 Maya'nın köyüne giderken.
+
+
 ![Karakter ve Gemi](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/dbf4b9d8-308d-4c75-a267-96f0b7c844bc)
 Karakterimiz ve Gemi Aynı karede.
 
