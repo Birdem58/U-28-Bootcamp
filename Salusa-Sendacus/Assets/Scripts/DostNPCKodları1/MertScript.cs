@@ -8,20 +8,20 @@ public class MertScript : MonoBehaviour
     public float Timer = 45;
     public Transform MertTransformu;
     private bool gtx = false;
-    private Animator Animatör;
+    private Animator Animator;
     public GameObject Colliderdegis;
     public Transform Bosluk;
-    
-    
+
+
 
 
     private void Start()
     {
-        Animatör = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
         Colliderdegis.GetComponent<BoxCollider>().enabled = true;
-        
+
     }
-    
+
 
 
 
@@ -31,7 +31,7 @@ public class MertScript : MonoBehaviour
         {
             gtx = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeMertSesi);
-            //GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
+            GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
             StartCoroutine(StartTimer());
         }
 
@@ -42,8 +42,8 @@ public class MertScript : MonoBehaviour
         yield return new WaitForSeconds(Timer);
 
         MertTransformu.position = Bosluk.position;
-        Animatör.SetBool("gtx", true);
+        Animator.SetBool("gtx", true);
         Colliderdegis.GetComponent<BoxCollider>().enabled = true;
-        
+
     }
 }

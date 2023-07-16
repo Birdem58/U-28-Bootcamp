@@ -9,22 +9,22 @@ public class LiWeiScript : MonoBehaviour
     public AudioClip AstraVeLiWeiSesi;
     public float Timer = 35;
     public Transform LiWeiTransformu;
-    private Animator Animatör;
-    public GameObject Colliderdegis;
+    private Animator Animator;
+    // public GameObject Colliderdegis;
     [SerializeField] private UnityEvent _liWeiKonusma;
     [SerializeField] private UnityEvent _liWeiBilgi;
     public Transform Bosluk;
     private bool asd = false;
-    
+
 
     private void Start()
     {
-        Animatör = GetComponent<Animator>();
-        Colliderdegis.GetComponent<SphereCollider>().enabled = true;
-        
+        Animator = GetComponent<Animator>();
+        // Colliderdegis.GetComponent<SphereCollider>().enabled = true;
+
     }
 
-    
+
 
     private void OnTriggerEnter(Collider LiWei)
     {
@@ -32,16 +32,16 @@ public class LiWeiScript : MonoBehaviour
         {
             asd = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeLiWeiSesi);
-            //GetComponent<CapsuleCollider>().center = new Vector3(0, -20, 0);
+            GetComponent<CapsuleCollider>().center = new Vector3(0, -20, 0);
             _liWeiKonusma.Invoke();
             StartCoroutine(KonusmaSonrasi());
             StartCoroutine(StartTimer());
-            Colliderdegis.GetComponent<SphereCollider>().enabled = false;
+            // Colliderdegis.GetComponent<CapsuleCollider>().enabled = false;
         }
 
 
     }
-    
+
 
     IEnumerator KonusmaSonrasi()
     {
@@ -55,9 +55,9 @@ public class LiWeiScript : MonoBehaviour
 
         LiWeiTransformu.position = Bosluk.position;
         LiWeiTransformu.rotation = Quaternion.Euler(0, 90, 0);
-        
-        Animatör.SetBool("asd", true);
-        Colliderdegis.GetComponent<SphereCollider>().enabled = true;
+
+        Animator.SetBool("asd", true);
+        //  Colliderdegis.GetComponent<SphereCollider>().enabled = true;
 
 
     }

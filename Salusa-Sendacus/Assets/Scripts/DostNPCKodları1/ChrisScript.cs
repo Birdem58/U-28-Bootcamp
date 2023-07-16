@@ -10,18 +10,18 @@ public class ChrisScript : MonoBehaviour
     private bool fg = false;
     public Transform Bosluk;
     public GameObject Colliderdegis;
-    private Animator Animatör;
-    
+    private Animator Animator;
+
 
     [SerializeField] UnityEvent _ChrisKonusuyor;
 
     private void Start()
     {
         Colliderdegis.GetComponent<BoxCollider>().enabled = true;
-        Animatör = GetComponent<Animator>();
-        
+        Animator = GetComponent<Animator>();
+
     }
-    
+
 
 
 
@@ -33,10 +33,10 @@ public class ChrisScript : MonoBehaviour
         {
             fg = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeChrisSesi);
-            //GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
+            GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
             StartCoroutine(StartTimer());
         }
-        
+
 
     }
 
@@ -45,10 +45,10 @@ public class ChrisScript : MonoBehaviour
         yield return new WaitForSeconds(30);
         _ChrisKonusuyor.Invoke();
         yield return new WaitForSeconds(Timer);
-        Animatör.SetBool("fg", true);
+        Animator.SetBool("fg", true);
         ChrisTransformu.position = Bosluk.position;
         ChrisTransformu.rotation = Quaternion.Euler(0, 270, 0);
-        
+
 
 
     }

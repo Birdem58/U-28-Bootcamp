@@ -9,12 +9,12 @@ public class MayaScripti : MonoBehaviour
     public Transform MayaTransformu;
     private bool rt = false;
     public Transform Bosluk;
-    private Animator Animatör;
+    private Animator Animator;
     public GameObject Colliderdegis;
     
     private void Start()
     {
-        Animatör = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
         Colliderdegis.GetComponent<BoxCollider>().enabled = true;
         
     }
@@ -26,7 +26,7 @@ public class MayaScripti : MonoBehaviour
         {
             rt = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeMayaSesi);
-            //GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
+            GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
             StartCoroutine(StartTimer());
         }
 
@@ -39,7 +39,7 @@ public class MayaScripti : MonoBehaviour
         MayaTransformu.position = Bosluk.position;
         MayaTransformu.rotation = Quaternion.Euler(0, 270, 0);
         
-        Animatör.SetBool("rt", true);
+        Animator.SetBool("rt", true);
         Colliderdegis.GetComponent<BoxCollider>().enabled = true;
     }
 }

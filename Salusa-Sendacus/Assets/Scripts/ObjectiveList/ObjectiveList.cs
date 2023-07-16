@@ -30,6 +30,12 @@ public class ObjectiveList : MonoBehaviour
 
     public bool mayaikincitriggerduvar = true;
 
+    public bool mayaCanavarDuvari = true;
+
+    public bool mayaIleKonus = true;
+
+
+    public int mayaCanavarCount;
     public int banditCanavarCount;
     public int chrisCanavarCount;
     public int objtutKristal = 0;
@@ -162,7 +168,7 @@ public class ObjectiveList : MonoBehaviour
     {
         if (mayailktriggerduvar && index == 12)
         {
-            mayailktriggerduvar = true;
+            mayailktriggerduvar = false;
             ObjTransiton();
         }
     }
@@ -190,9 +196,38 @@ public class ObjectiveList : MonoBehaviour
     {
         if (mayaikincitriggerduvar && index == 15)
         {
-            mayaikincitriggerduvar = true;
+            mayaikincitriggerduvar = false;
             ObjTransiton();
         }
+    }
+
+    public void MayaCanavarDuvari()
+    {
+        if (mayaCanavarDuvari && index == 16)
+        {
+            mayaCanavarDuvari = false;
+            ObjTransiton();
+        }
+    }
+
+    public void MayaCanavarOldurme()
+    {
+        mayaCanavarCount++;
+        if (mayaCanavarCount == 7 && index == 17)
+        {
+            mayaCanavarCount = 0;
+            ObjTransiton();
+        }
+    }
+
+    public void MayaIleKonus()
+    {
+        if (mayaIleKonus && index == 18)
+        {
+            mayaIleKonus = false;
+            ObjTransiton();
+        }
+
     }
 
 
@@ -228,7 +263,7 @@ public class ObjectiveList : MonoBehaviour
         }
         if (index == 4)
         {
-            objectivetext.text = "Gölün Solundaki Kristalleri Topla" + objtutKristal.ToString() + "/15";
+            objectivetext.text = "Gölün Solundaki Kristalleri Topla " + objtutKristal.ToString() + " /15";
         }
         if (index == 5)
         {
@@ -248,7 +283,7 @@ public class ObjectiveList : MonoBehaviour
         }
         if (index == 9)
         {
-            objectivetext.text = "Canavarları Öldür" + chrisCanavarCount.ToString() + " /5";
+            objectivetext.text = "Canavarları Öldür " + chrisCanavarCount.ToString() + " /5";
         }
         if (index == 10)
         {
@@ -268,7 +303,7 @@ public class ObjectiveList : MonoBehaviour
         }
         if (index == 14)
         {
-            objectivetext.text = "Seni Pusuya Düşüren Canavarları Öldür" + banditCanavarCount.ToString() + " /3";
+            objectivetext.text = "Seni Pusuya Düşüren Canavarları Öldür " + banditCanavarCount.ToString() + " /3";
         }
         if (index == 15)
         {
@@ -280,15 +315,15 @@ public class ObjectiveList : MonoBehaviour
         }
         if (index == 17)
         {
-            objectivetext.text = "";
+            objectivetext.text = "Maya'yı Kurtarmak İçin Canavarları Öldür";
         }
         if (index == 18)
         {
-            objectivetext.text = "";
+            objectivetext.text = "Maya'yı Bul !";
         }
         if (index == 19)
         {
-            objectivetext.text = "";
+            objectivetext.text = "Maya İle Konuş";
         }
         if (index == 20)
         {
