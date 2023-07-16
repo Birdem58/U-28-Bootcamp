@@ -271,6 +271,15 @@ Görev Yönetimi: Ekip üyeleri Daily Srumların haricinde düzenli olarak da Di
 
 Sprint board update: Sprint board screenshotı:
 
+![MiroTümbakış](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/781890c5-9cad-4acd-b4b5-3f1255aaa976)
+
+
+![Sprint3 ilk ekran görüntüsü](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/8891bb2e-5ac5-4290-a7fd-b008852678ce)
+
+
+![ikinci Mİro ekran görüntüsü](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/faac5645-3db3-4ea2-b855-90ca7ba89dd6)
+
+![Miro3ekranıGördü](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/149bbd0a-4802-4b6c-ac7f-a29178aa409e)
 
 
 Burndown Chart            
