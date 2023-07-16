@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Opening.unity
+    guid: 32d23b113e1e9624ea41ff811b7ce10c
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 77c0edcda2d7ba241acc291e382e4d7f
   - enabled: 1
@@ -20,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TemelSahne.unity
     guid: bd9a81da0d57a87449f61a8417f67211
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: a75e9f5e015cdac4d9adbcd70d38a0d1
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: e4b5e0bf1d8a59b4e93bfe3c986daf11
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}
