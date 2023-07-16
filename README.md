@@ -123,9 +123,7 @@ https://youtu.be/ZnkhqCn0qsw
 
 # Sprint 2
 
-# Sprint Notları
-
-Genel Özet: 2. Sprint toplantısında konuşulan ve yapılması planlanan çoğu hedef tamamlandı. Bir hedef istenilen başarıya yakın bir sonuç alınsa da eksikti. 3. Sprintte eksikliklerin tamamlanılacak. Takım içi iletişim iyiydi. 
+Sprint Notları: 2. Sprint toplantısında konuşulan ve yapılması planlanan çoğu hedef tamamlandı. Bir hedef istenilen başarıya yakın bir sonuç alınsa da eksikti. 3. Sprintte eksikliklerin tamamlanılacak. Takım içi iletişim iyiydi. 
 Toplantı saatleri takım içerisinde rahatça belirlendi. Ekip güncel hareket edebiliyordu. Sorumluluklar konusunda herkes elinden geleni yapıyor, kendisinden istenilenlere karşı gayretliydi. Ekip üyelerinin takıldığı sorunlarda beraber başa çıkılabiliyordu.
 
 Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
@@ -243,9 +241,7 @@ https://miro.com/app/board/uXjVMAa8O4w=/
 
 # Sprint 3
 
-# Sprint Notları
-
-Genel Özet: 3. Sprint toplantısında planlanan hedefler tamamlandı. Takım içi iletişim iyiydi. Uyumlu ve koordine bir çalışma ortamı yakalandı.
+ Sprint Notları: 3. Sprint toplantısında planlanan hedefler tamamlandı. Takım içi iletişim iyiydi. Uyumlu ve koordine bir çalışma ortamı yakalandı.
 
 Sprint içinde tamamlanması tahmin edilen puan: 105 Puan
 
