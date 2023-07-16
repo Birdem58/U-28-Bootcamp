@@ -108,11 +108,18 @@ namespace StarterAssets
         private CharacterController _controller;
         private StarterAssetsInputs _input;
         private GameObject _mainCamera;
-
+        // Burdayız!!!!!!!!!!!!
         [SerializeField] private UnityEvent _jumped;
         [SerializeField] private UnityEvent _moved;
+
+        [SerializeField] private UnityEvent _Run;
+
+
         bool moveInvokeControl = false;
         bool jumpInvokeControl = false;
+
+        bool runInvokeControl = true;
+        // Burdayız!!!!!!!!!!!!!!!!
 
         private const float _threshold = 0.01f;
 
@@ -226,6 +233,15 @@ namespace StarterAssets
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
+            if (_input.sprint)
+            {
+                if (runInvokeControl)
+                {
+                    _Run.Invoke();
+                    runInvokeControl = false;
+                }
+            }
+
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
             // note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
@@ -248,7 +264,7 @@ namespace StarterAssets
                     Time.deltaTime * SpeedChangeRate);
                 // round speed to 3 decimal places
                 _speed = Mathf.Round(_speed * 1000f) / 1000f;
-                
+
             }
             else
             {
@@ -265,7 +281,7 @@ namespace StarterAssets
             // if there is a move input rotate player when the player is moving
             if (_input.move != Vector2.zero)
             {
-                
+
                 _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
                                   _mainCamera.transform.eulerAngles.y;
                 float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
@@ -328,7 +344,7 @@ namespace StarterAssets
                             _jumped.Invoke();
                             jumpInvokeControl = true;
                         }
-                        
+
                     }
                 }
 
@@ -398,10 +414,10 @@ namespace StarterAssets
                     var index = Random.Range(0, FootstepAudioClips.Length);
                     AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
                     //burda kontrol ediyoruz hareketi
-                    if(moveInvokeControl != true)
+                    if (moveInvokeControl != true)
                     {
-                    _moved.Invoke();
-                    moveInvokeControl = true;
+                        _moved.Invoke();
+                        moveInvokeControl = true;
                     }
                 }
             }

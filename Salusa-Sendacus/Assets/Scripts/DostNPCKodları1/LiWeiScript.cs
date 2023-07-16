@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LiWeiScript : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class LiWeiScript : MonoBehaviour
     public float Timer = 45;
     public Transform LiWeiTransformu;
     public Animator Animator;
+    [SerializeField] private UnityEvent _liWeiKonusma;
+    [SerializeField] private UnityEvent _liWeiBilgi;
 
     private bool Tetik = false;
 
@@ -19,6 +22,8 @@ public class LiWeiScript : MonoBehaviour
             Tetik = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeLiWeiSesi);
             GetComponent<CapsuleCollider>().center = new Vector3(0, -20, 0);
+            _liWeiKonusma.Invoke();
+            StartCoroutine(KonusmaSonrasi());
             StartCoroutine(StartTimer());
 
         }
@@ -36,6 +41,13 @@ public class LiWeiScript : MonoBehaviour
             LiWeiTransformu.position = new Vector3(460, 361 ,522);
         }
     }*/
+
+    IEnumerator KonusmaSonrasi()
+    {
+        yield return new WaitForSeconds(25);
+        _liWeiBilgi.Invoke();
+    }
+
     IEnumerator StartTimer()
     {
         yield return new WaitForSeconds(Timer);
