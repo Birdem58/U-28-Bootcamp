@@ -280,6 +280,23 @@ Burndown Chart
 
 Ürün Durumu: Ekran görüntüleri ve Ekran Kayıtları:
 
+
+![Maya'ya Giden Yol](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/e1a07ce3-7375-48a7-9fa3-12fbdf602e29)
+Maya'nın köyüne giderken.
+![Karakter ve Gemi](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/dbf4b9d8-308d-4c75-a267-96f0b7c844bc)
+Karakterimiz ve Gemi Aynı karede.
+
+![GöldenSonKöyünManzarası](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/92bd9bd8-6f40-43ac-8731-e7e428db1431)
+Gölden Son Köyün Manzarası.
+
+
+![İlkKöyümüz](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/a8ee5f61-fb20-403f-a32f-0f5ceb73f814)
+İlk Köyümüz.
+
+![Maya'nın köyü](https://github.com/Birdem58/U-28-Bootcamp/assets/113117061/d3ef532a-0689-47a8-bedc-45e87395e31a)
+Maya'nın Köyü.
+
+
 Sprint Review: Oyunun tüm tekinik ve tasarımsal görevleri tamamlandı. Çalışan bir ürün elde edildi.
 
 Sprint Retrospective: Herhangi olumsuz bir durumla karşılasılmadı. Takım üyeleri birbirlerine karşı gösterdikleri nezaket ve çalışma azminden dolayı birbirine teşekkürlerini iletti.
