@@ -6,6 +6,7 @@ public class Nesnespawnli : MonoBehaviour
 {
     public GameObject Nesne;
     public GameObject Nesne2;
+    public GameObject Nesne3;
 
 
     private void Start()
@@ -18,6 +19,7 @@ public class Nesnespawnli : MonoBehaviour
     {
         Nesne.SetActive(false);
         Nesne2.SetActive(false);
+        Nesne3.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider Razor)
@@ -26,7 +28,7 @@ public class Nesnespawnli : MonoBehaviour
         {
             Nesne.SetActive(true);
             Nesne2.SetActive(true);
-
+            Nesne3.SetActive(true);
         }
     }
 }
