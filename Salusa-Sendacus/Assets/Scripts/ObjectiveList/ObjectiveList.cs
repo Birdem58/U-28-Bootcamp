@@ -34,7 +34,17 @@ public class ObjectiveList : MonoBehaviour
 
     public bool mayaIleKonus = true;
 
+    public bool mayaKonusmaSornasi = true;
 
+    public bool mertIlkTriggerDuvar = true;
+
+    public bool mertIkinciTriggerDuvar = true;
+    public bool mertKonusmaSornasi = true;
+
+    public bool mertiBul = true;
+
+
+    public int mertCanavarCount;
     public int mayaCanavarCount;
     public int banditCanavarCount;
     public int chrisCanavarCount;
@@ -230,6 +240,64 @@ public class ObjectiveList : MonoBehaviour
 
     }
 
+    public void MayaKonusmaSornasi()
+    {
+        if (mayaKonusmaSornasi && index == 19)
+        {
+            mayaKonusmaSornasi = false;
+            ObjTransiton();
+        }
+    }
+
+    public void MertIlkTriggerDuvar()
+    {
+        if (mertIlkTriggerDuvar && index == 20)
+        {
+            mertIlkTriggerDuvar = false;
+            ObjTransiton();
+        }
+    }
+
+    public void MertIkinciTriggerDuvar()
+    {
+        if (mertIlkTriggerDuvar && index == 21)
+        {
+            mertIkinciTriggerDuvar = false;
+            ObjTransiton();
+        }
+    }
+
+    public void MertCanavarOldurme()
+    {
+        mertCanavarCount++;
+        if (mertCanavarCount == 6 && index == 22)
+        {
+            mertCanavarCount = 0;
+            ObjTransiton();
+        }
+    }
+
+    //BUrayaCanvarlaKarşılaşacağına yakın box trigger ekle
+    public void MertiBul()
+    {
+
+        if (mertiBul && index == 23)
+        {
+            mertiBul = false;
+            ObjTransiton();
+        }
+    }
+
+    public void MertKonusmaSornasi()
+    {
+        if (mertKonusmaSornasi && index == 13)
+        {
+            mertKonusmaSornasi = false;
+            ObjTransiton();
+        }
+    }
+
+
 
     void ObjTransiton()
     {
@@ -327,19 +395,31 @@ public class ObjectiveList : MonoBehaviour
         }
         if (index == 20)
         {
-            objectivetext.text = "";
+            objectivetext.text = "Mantarları Takip ederek Gemiye Git";
         }
         if (index == 21)
         {
-            objectivetext.text = "";
+            objectivetext.text = "Sağa doğru ilerleyip gölü takip ederek Mert'i kurtar !";
         }
         if (index == 22)
         {
-            objectivetext.text = "";
+            objectivetext.text = "Artık takip etmen gereken şeyi biliyorsun :)";
         }
         if (index == 23)
         {
-            objectivetext.text = "";
+            objectivetext.text = "Mert'i kurtarmak için Canavarları Öldür " + mertCanavarCount.ToString() + " /6";
+        }
+        if (index == 24)
+        {
+            objectivetext.text = "Mert'i Bul !";
+        }
+        if (index == 25)
+        {
+            objectivetext.text = "Mert İle Konuş";
+        }
+        if (index == 26)
+        {
+            objectivetext.text = "Artık Burdan Gitme Zamanı Gemiye Dön !";
         }
 
 

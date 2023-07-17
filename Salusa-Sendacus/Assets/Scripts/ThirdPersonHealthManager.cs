@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThirdPersonHealthManager : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip _canSesi;
     [SerializeField] private GameObject canText;
+    [SerializeField] private GameObject oldunText;
+
+    public GameObject astraMeshRenderer;
+    public GameObject astraHeadMeshRenderer;
+
+
+
     [SerializeField] private AudioClip _hasarAlma;
     public HealthBar healthBar;
 
@@ -74,5 +82,28 @@ public class ThirdPersonHealthManager : MonoBehaviour
         audioSource.PlayOneShot(_hasarAlma);
         currentHealth -= aiDamage;
         healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0.0f)
+        {
+            Die();
+
+        }
     }
+
+    public void Die()
+    {
+        oldunText.SetActive(true);
+        astraMeshRenderer.SetActive(false);
+        astraHeadMeshRenderer.SetActive(false);
+        StartCoroutine(LoadSceneAgain());
+
+    }
+
+    IEnumerator LoadSceneAgain()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+
+    }
+
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class MertScript : MonoBehaviour
 {
     public AudioClip AstraVeMertSesi;
@@ -11,7 +11,7 @@ public class MertScript : MonoBehaviour
     private Animator Animator;
     public GameObject Colliderdegis;
     public Transform Bosluk;
-
+    [SerializeField] private UnityEvent _mertKonusmaSonrasi;
 
 
 
@@ -32,7 +32,9 @@ public class MertScript : MonoBehaviour
             gtx = true;
             GetComponent<AudioSource>().PlayOneShot(AstraVeMertSesi);
             GetComponent<BoxCollider>().center = new Vector3(0, -20, 0);
+            _mertKonusmaSonrasi.Invoke();
             StartCoroutine(StartTimer());
+
         }
 
     }
