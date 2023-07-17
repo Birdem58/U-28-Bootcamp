@@ -39,6 +39,7 @@ public class ObjectiveList : MonoBehaviour
     public bool mertIlkTriggerDuvar = true;
 
     public bool mertIkinciTriggerDuvar = true;
+    public bool mertCanavarOldurmeTrigger = true;
     public bool mertKonusmaSornasi = true;
 
     public bool mertiBul = true;
@@ -260,28 +261,37 @@ public class ObjectiveList : MonoBehaviour
 
     public void MertIkinciTriggerDuvar()
     {
-        if (mertIlkTriggerDuvar && index == 21)
+        if (mertIkinciTriggerDuvar && index == 21)
         {
             mertIkinciTriggerDuvar = false;
             ObjTransiton();
         }
     }
-
+    public void MertCanavarOldurmeTrigger()
+    {
+        if (mertCanavarOldurmeTrigger && index == 22)
+        {
+            mertCanavarOldurmeTrigger = false;
+            ObjTransiton();
+        }
+    }
     public void MertCanavarOldurme()
     {
         mertCanavarCount++;
-        if (mertCanavarCount == 6 && index == 22)
+        if (mertCanavarCount == 6 && index == 23)
         {
             mertCanavarCount = 0;
             ObjTransiton();
         }
     }
 
+
+
     //BUrayaCanvarlaKarşılaşacağına yakın box trigger ekle
     public void MertiBul()
     {
 
-        if (mertiBul && index == 23)
+        if (mertiBul && index == 24)
         {
             mertiBul = false;
             ObjTransiton();
@@ -290,7 +300,7 @@ public class ObjectiveList : MonoBehaviour
 
     public void MertKonusmaSornasi()
     {
-        if (mertKonusmaSornasi && index == 13)
+        if (mertKonusmaSornasi && index == 24)
         {
             mertKonusmaSornasi = false;
             ObjTransiton();
