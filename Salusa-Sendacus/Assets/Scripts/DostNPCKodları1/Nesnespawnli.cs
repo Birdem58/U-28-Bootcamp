@@ -17,18 +17,41 @@ public class Nesnespawnli : MonoBehaviour
     }
     private void Awake()
     {
-        Nesne.SetActive(false);
-        Nesne2.SetActive(false);
-        Nesne3.SetActive(false);
+        if (Nesne != null)
+        {
+            Nesne.SetActive(false);
+        }
+
+        if (Nesne2 != null)
+        {
+            Nesne2.SetActive(false);
+        }
+        if (Nesne3 != null)
+        {
+            Nesne3.SetActive(false);
+        }
+
+
     }
 
     private void OnTriggerEnter(Collider Razor)
     {
         if (Razor.gameObject.CompareTag("Player"))
         {
-            Nesne.SetActive(true);
-            Nesne2.SetActive(true);
-            Nesne3.SetActive(true);
+            if (Nesne != null)
+            {
+                Nesne.SetActive(true);
+            }
+
+            if (Nesne2 != null)
+            {
+                Nesne2.SetActive(true);
+            }
+            if (Nesne3 != null)
+            {
+                Nesne3.SetActive(true);
+            }
+
         }
     }
 }

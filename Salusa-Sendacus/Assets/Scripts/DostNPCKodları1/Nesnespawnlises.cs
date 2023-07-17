@@ -5,7 +5,7 @@ using UnityEngine;
 public class Nesnespawnlises : MonoBehaviour
 {
     public AudioClip Disturbed;
-    public GameObject Küp2;
+    public GameObject Kup2;
     private bool RTX = true;
 
     private void Update()

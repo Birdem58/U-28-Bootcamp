@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ObjectiveList : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class ObjectiveList : MonoBehaviour
     public bool mertKonusmaSornasi = true;
 
     public bool mertiBul = true;
+
+    public bool gemiyeGeldi = true;
 
 
     public int mertCanavarCount;
@@ -300,11 +303,21 @@ public class ObjectiveList : MonoBehaviour
 
     public void MertKonusmaSornasi()
     {
-        if (mertKonusmaSornasi && index == 24)
+        if (mertKonusmaSornasi && index == 25)
         {
             mertKonusmaSornasi = false;
             ObjTransiton();
         }
+    }
+
+    public void GemiyeGelince()
+    {
+        if (gemiyeGeldi && index == 26)
+        {
+            gemiyeGeldi = false;
+            ObjTransitonWithoutSound();
+        }
+
     }
 
 
@@ -430,6 +443,11 @@ public class ObjectiveList : MonoBehaviour
         if (index == 26)
         {
             objectivetext.text = "Artık Burdan Gitme Zamanı Gemiye Dön !";
+        }
+        if (index == 27)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
 
 
